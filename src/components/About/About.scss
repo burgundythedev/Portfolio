@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Futura";
+    src: local("Futura"), url(../../UI/Fonts/Futura-Bold-font.ttf) format('truetype');
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+        &--history {}
+
+        &--education {}
+
+        &--skills {}
+
+        &--hobbies {}
+    }
+
+    &__title {
+        color: #cea0a0;
+        font-size: 40px;
+        font-family: "futura";
+        letter-spacing: -3px;
+        display: flex;
+
+        &--history {}
+
+        &--education {
+            justify-content: end;
+        }
+
+        &--skills {}
+
+        &--hobbies {
+            justify-content: end;
+        }
+
+    }
+
+    &__description {
+        color: #5928e5;
+        font-size: 15px;
+        font-family: "futura";
+        display: flex;
+
+
+        &--history {
+            width: 50%;
+        }
+
+        &--education {
+            list-style: url('../../UI/Image/diplome-logo.png');
+            align-items: flex-end;
+            flex-direction: column;
+        }
+
+        &--skills {
+            letter-spacing: 3px;
+        }
+
+        &--hobbies {
+
+            letter-spacing: 3px;
+            justify-content: flex-end;
+        }
+    }
+
+
+
+  
+}

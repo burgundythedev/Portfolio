@@ -1,0 +1,217 @@
+@font-face {
+    font-family: "Futura";
+    src: local("Futura"), url(../../UI/Fonts/Futura-Bold-font.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Orbitron";
+    src: local("Orbitron"), url(../../UI/Fonts/Orbitron-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Integral";
+    src: local("Integral"), url(../../UI/Fonts/IntegralCF-Bold.woff) format('woff');
+}
+
+.presentation {
+    
+
+    color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    font-family: "Integral";
+
+
+    &__hello {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+       
+    }
+
+    &__name {
+        line-height: 1px;
+        letter-spacing: -1px;
+
+        & span {
+            color:rgba(89, 40, 229, 255);
+        }
+
+        &--1{
+            font-size: 80px;
+        }
+        &--2{
+            font-size: 60px;
+        }
+        &--3{
+            font-size: 40px;
+        }
+
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 10px;
+
+
+    }
+
+
+
+    &__description {
+        font-size: 15px;
+        line-height: 30px;
+        letter-spacing: 1px;
+        font-family: "Orbitron";
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        text-align: center;
+
+        
+    }
+
+
+
+    &__wrapper-circle {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        
+    }
+    &__link {
+
+        font-size: 13px;
+        color: aliceblue;
+        &:link,
+        &:visited,
+        &:hover {
+            text-decoration: none;
+
+        }
+
+        &:visited {
+            color: white;
+        }
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    &__circle {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25%;
+        padding: 10px;
+
+
+        &--1 {
+            background-color: rgba(89, 40, 229, 255);
+
+
+            &:hover {
+                animation: shadow-pop-bl 0.4s cubic-bezier(0.270, 0.000, 0.745, 0.715) both;
+
+                @keyframes shadow-pop-bl {
+                    0% {
+                        box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white;
+                        transform: translateX(0) translateY(0);
+                    }
+
+                    100% {
+                       
+                        box-shadow: -1px 1px white, -2px 2px white, -3px 3px white, -4px 4px white, -5px 5px white, -6px 6px white, -7px 7px white, -8px 8px white;
+                        transform: translateX(8px) translateY(-8px);
+                    }
+                }
+
+            }
+
+
+        }
+        &--2 {
+            background-color: #cea0a0;
+
+
+            &:hover {
+                animation: shadow-pop-bl 0.4s cubic-bezier(0.270, 0.000, 0.745, 0.715) both;
+
+                @keyframes shadow-pop-bl {
+                    0% {
+                        box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white;
+                        transform: translateX(0) translateY(0);
+                    }
+
+                    100% {
+                        
+                        box-shadow: -1px 1px white, -2px 2px white, -3px 3px white, -4px 4px white, -5px 5px white, -6px 6px white, -7px 7px white, -8px 8px white;
+                        transform: translateX(8px) translateY(-8px);
+                    }
+                }
+
+            }
+
+
+        }
+        &--3 {
+            background-color: rgba(89, 40, 229, 255);
+
+
+            &:hover {
+                animation: shadow-pop-bl 0.4s cubic-bezier(0.270, 0.000, 0.745, 0.715) both;
+
+                @keyframes shadow-pop-bl {
+                    0% {
+                        box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white;
+                        transform: translateX(0) translateY(0);
+                    }
+
+                    100% {
+                   
+                        box-shadow: -1px 1px white, -2px 2px white, -3px 3px white, -4px 4px white, -5px 5px white, -6px 6px white, -7px 7px white, -8px 8px white;
+                        transform: translateX(8px) translateY(-8px);
+                    }
+                }
+
+            }
+
+
+        }
+        &--4 {
+            background-color: #cea0a0;
+
+
+            &:hover {
+                animation: shadow-pop-bl 0.4s cubic-bezier(0.270, 0.000, 0.745, 0.715) both;
+
+                @keyframes shadow-pop-bl {
+                    0% {
+                        box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white;
+                        transform: translateX(0) translateY(0);
+                    }
+
+                    100% {
+                  
+                        box-shadow: -1px 1px white, -2px 2px white, -3px 3px white, -4px 4px white, -5px 5px white, -6px 6px white, -7px 7px white, -8px 8px white;
+                        transform: translateX(8px) translateY(-8px);
+                    }
+                }
+
+            }
+
+
+        }
+    }
+
+
+}
