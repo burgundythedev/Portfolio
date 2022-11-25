@@ -3,24 +3,19 @@
     src: local("Futura"), url(../../UI/Fonts/Futura-Bold-font.ttf) format('truetype');
 }
 
-.title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Futura";
-    font-size: 50px;
-    letter-spacing: -3px;
-    color: white;
-   
-}
+// .title {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-family: "Integral";
+//     font-size: 70px;
+//     letter-spacing: -2px;
+//     color: #cea0a0;
+
+// }
 
 .timeline {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    
+    margin-top: 10px;
 
     &__beginner {
         position: relative;
@@ -30,8 +25,6 @@
         grid-template-rows: minmax(500px, auto-fill);
         grid-auto-flow: dense;
         gap: 10px 5px;
-
-
 
         @media screen and (max-width:1091px) {
             grid-template-columns: repeat(50%, minmax(300px, 1fr));
@@ -49,13 +42,12 @@
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
         &--bx1 {
-
-            grid-column: span 2;
+            grid-column: span 1;
             grid-row: span 1;
-
+            background-color: rgb(84, 76, 236, 0.2);
 
             &:hover {
-                background-color: rgb(84, 76, 236, 0.7);
+                background-color: rgb(84, 76, 236, 0.8);
             }
 
             @media screen and (max-width:1091px) {
@@ -65,15 +57,13 @@
         }
 
         &--bx2 {
-
-            grid-column: span 3;
+            grid-column: span 2;
             grid-row: span 1;
             justify-content: flex-start;
-
+            background-color: rgb(84, 76, 236, 0.2);
 
             &:hover {
-                background-color: rgba(48, 140, 124, 0.63);
-
+                background-color: rgb(84, 76, 236, 0.8);
             }
 
             @media screen and (max-width:1091px) {
@@ -84,12 +74,12 @@
         }
 
         &--bx3 {
-
             grid-column: span 2;
             grid-row: span 1;
+            background-color: rgb(84, 76, 236, 0.2);
 
             &:hover {
-                background-color: rgba(255, 220, 214, 0.8);
+                background-color: rgb(84, 76, 236, 0.8);
             }
 
             @media screen and (max-width:1091px) {
@@ -100,16 +90,12 @@
         }
 
         &--bx4 {
-
             grid-column: span 2;
-            grid-row: span 1;
-
-
-
+            grid-row: span 2;
+            background-color: rgba(255, 220, 214, 0.6);
 
             &:hover {
-                background-color: rgb(249, 228, 183, 0.7);
-
+                background-color: rgba(255, 220, 214, 255);
             }
 
             @media screen and (max-width:1091px) {
@@ -119,13 +105,12 @@
         }
 
         &--bx5 {
-
-            grid-column: span 2;
-            grid-row: span 1;
-
+            grid-column: span 3;
+            grid-row: span 2;
+            background-color: rgba(255, 220, 214, 0.6);
 
             &:hover {
-                background-color: rgba(238, 233, 204, 0.918);
+                background-color: rgba(255, 220, 214, 255);
             }
 
             @media screen and (max-width:1091px) {
@@ -135,12 +120,12 @@
         }
 
         &--bx6 {
-
-            grid-column: span 3;
+            grid-column: span 6;
             grid-row: span 1;
+            background-color: rgba(38, 185, 154, 0.2);
 
             &:hover {
-                background-color: rgba(238, 233, 204, 0.979);
+                background-color: rgba(38, 185, 154, 255);
             }
 
             @media screen and (max-width:1091px) {
@@ -148,110 +133,33 @@
                 grid-row: unset !important;
             }
         }
-
-        &--bx7 {
-
-            grid-column: span 7;
-            grid-row: span 1;
-
-            &:hover {
-                background-color: rgba(238, 233, 204, 0.979);
-            }
-
-            @media screen and (max-width:1091px) {
-                grid-column: unset !important;
-                grid-row: unset !important;
-            }
-        }
-
-        &--bx8 {
-
-            grid-column: span 1;
-            grid-row: span 1;
-
-            &:hover {
-                background-color: rgba(238, 233, 204, 0.979);
-            }
-
-            @media screen and (max-width:1091px) {
-                grid-column: unset !important;
-                grid-row: unset !important;
-            }
-        }
-        &--bx9 {
-
-            grid-column: span 1;
-            grid-row: span 1;
-
-            &:hover {
-                background-color: rgba(238, 233, 204, 0.979);
-            }
-
-            @media screen and (max-width:1091px) {
-                grid-column: unset !important;
-                grid-row: unset !important;
-            }
-        }
-        &--bx10 {
-
-            grid-column: span 1;
-            grid-row: span 1;
-
-            &:hover {
-                background-color: rgba(238, 233, 204, 0.979);
-            }
-
-            @media screen and (max-width:1091px) {
-                grid-column: unset !important;
-                grid-row: unset !important;
-            }
-        }
-        &--bx11 {
-
-            grid-column: span 1;
-            grid-row: span 1;
-
-            &:hover {
-                background-color: rgba(238, 233, 204, 0.979);
-            }
-
-            @media screen and (max-width:1091px) {
-                grid-column: unset !important;
-                grid-row: unset !important;
-            }
-        }
-       
-
-
-
     }
 
     &__date {
-        font-family: "Futura";
-        font-size: 20px;
-        letter-spacing: -1px;
-        width: 40%;
-
-    }
-
-    &__ref {
-        font-size: 25px;
-        font-family: "Futura";
+        font-family: "Integral";
+        font-size: 15px;
+        letter-spacing: 1px;
         width: 100%;
-
+        color: rgba(29, 29, 29, 255)
     }
+
+
 
     &__description {
         width: 100%;
         font-size: 17px;
         font-family: "Futura";
         text-align: justify;
+        color: rgba(29, 29, 29, 255);
 
+        &--k{
+            text-align: center;
+        }
     }
 
     &__logo {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         margin-left: 2px;
     }
 
@@ -280,13 +188,14 @@
 
         &--k {
             width: 80%;
+            text-align: center;
         }
     }
 
     &__icon {
         display: flex;
         width: 100%;
-        margin-top: 5px;
+        margin-top: 10px;
 
 
         &--1 {

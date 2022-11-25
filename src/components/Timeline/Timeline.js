@@ -1,8 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { ScrollToPlugin } from "gsap/all";
-import TimelineWrapper from "../../UI/TimelineWrapper";
 import htmlLogo from "../../UI/Image/html.png";
 import cssLogo from "../../UI/Image/css.png";
 import jsLogo from "../../UI/Image/js-logo.png";
@@ -28,7 +27,7 @@ import "./Timeline.scss";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const Timeline = () => {
-  const myRef = useRef();
+  // const myRef = useRef();
 
   const onLoad = () => {
     gsap
@@ -87,8 +86,8 @@ const Timeline = () => {
     slideInLeft("#box");
   }, []);
   return (
-    <TimelineWrapper>
-      <h1 className="title" ref={myRef}>
+    <React.Fragment>
+      {/* <h1 className="title" ref={myRef}>
         <span className="letter">T</span>
         <span className="letter">I</span>
         <span className="letter">M</span>
@@ -97,19 +96,20 @@ const Timeline = () => {
         <span className="letter">I</span>
         <span className="letter">N</span>
         <span className="letter">E</span>
-      </h1>
+      </h1> */}
       <section className="timeline" id="nextSection">
         <div id="start1" className="timeline__beginner">
           <div className="timeline__wrap timeline__wrap--bx1">
-            <div className="timeline__icon timeline__icon--1">
-              <img className="timeline__man" src={walkM} alt="logo-walk" />
-            </div>
             <div className="timeline__icon timeline__icon--1b">
               <img className="timeline__man" src={walkM} alt="logo-walk" />
             </div>
             <div className="timeline__first timeline__first--fcc">
-              <h1 className="timeline__date">2021 (Self-Taught)</h1>
-              <h1 className="timeline__ref"> FreeCodeCamp </h1>
+              <h1 className="timeline__date">
+                2021
+                <span className="timeline__ref">
+                  - FreeCodeCamp (Self-Taught)
+                </span>
+              </h1>
               <p className="timeline__description">
                 FreeCodeCamp was the gateway to my first steps into Coding. I've
                 completed all the courses of HTML, CSS & JS.
@@ -127,8 +127,10 @@ const Timeline = () => {
               <img className="timeline__man" src={climbMan} alt="logo-walk" />
             </div>
             <div className="timeline__first timeline__first--it">
-              <h1 className="timeline__date">2021</h1>
-              <h1 className="timeline__ref">Training Web Dev</h1>
+              <h1 className="timeline__date">
+                2021
+                <span className="timeline__ref"> - Training Web Dev</span>
+              </h1>
               <p className="timeline__description">
                 9th months of training at IT-Akademy, I've learned and worked on
                 different timelines with PhP, JS, HTML, CSS, MySQL, Laravel,
@@ -150,8 +152,10 @@ const Timeline = () => {
               <img className="timeline__man" src={lugageMan} alt="logo-walk" />
             </div>
             <div className="timeline__first timeline__first--intern">
-              <h1 className="timeline__date">2021</h1>
-              <h1 className="timeline__ref">Stage developpeur</h1>
+              <h1 className="timeline__date">
+                2021
+                <span className="timeline__ref"> - Intership</span>
+              </h1>
               <p className="timeline__description">
                 4 months internship with a freelance web developer, creating my
                 first timelines with React.Js
@@ -165,11 +169,13 @@ const Timeline = () => {
               <img className="timeline__man" src={climbMan} alt="logo-walk" />
             </div>
             <div className="timeline__first timeline__first--i">
-              <h1 className="timeline__date">2022</h1>
-              <h1 className="timeline__ref">Graduated (Bac+2)</h1>
+              <h1 className="timeline__date">
+                2022
+                <span className="timeline__ref"> - Graduated (Bac+2)</span>
+              </h1>
               <p className="timeline__description">
-                Oral and visual presentation of timelines and knowledge develop
-                during the internship and school training
+                Oral and visual presentation of personnal Projects and knowledge
+                develop during the internship and school training
               </p>
               <img
                 src={dplLogo}
@@ -184,8 +190,10 @@ const Timeline = () => {
               <img className="timeline__man" src={walkM} alt="logo-walk" />
             </div>
             <div className="timeline__first timeline__first--j">
-              <h1 className="timeline__date">2022 (Self Taught)</h1>
-              <h1 className="timeline__ref">Udemy </h1>
+              <h1 className="timeline__date">
+                2022
+                <span className="timeline__ref"> - Udemy (Self Taught)</span>
+              </h1>
               <p className="timeline__description">
                 I dived deeper into React.js! I learned about Hooks, React
                 Routing, Animations, HTTP Request, API, BEM, SASS & more
@@ -200,20 +208,23 @@ const Timeline = () => {
               <img className="timeline__man" src={rocketMan} alt="logo-walk" />
             </div>
             <div className="timeline__first timeline__first--k">
-              <h1 className="timeline__date">2022</h1>
-              <h1 className="timeline__ref">
-                Still Learning/Creation of timelines
+              <h1 className="timeline__date">
+                2022
+                <span className="timeline__ref">
+                  {" "}
+                  - Ready to show the world my skills
+                </span>
               </h1>
-              <p className="timeline__description">
+              <p className="timeline__description timeline__description--k">
                 Keep Learning new Coding Concepts - Creation of Personal
-                timelines and a Portofolio with React.JS
+                Projects with React.JS, BEM, SASS, API, GitHub & more
               </p>
               <img src={reactLogo} alt="logo" className="timeline__logo" />
             </div>
           </div>
         </div>
       </section>
-    </TimelineWrapper>
+    </React.Fragment>
   );
 };
 

@@ -7,71 +7,128 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-image: url("../../UI/Image/right-chevron.png");
+    background-repeat: no-repeat;
+    background-position: 28% 58%;
+    background-size: 15%;
+
+    &__triangle {
+
+        &--1 {
+            display: inline-block;
+            height: 0;
+            width: 0;
+            border-top: 87px solid transparent;
+            border-bottom: 87px solid transparent;
+            border-left: 180px solid #5928e5;
+        }
+
+        &--2 {
+            display: inline-block;
+            height: 0;
+            width: 0;
+            border-top: 187px solid transparent;
+            border-right: 280px solid #5928e5;
+            border-bottom: 187px solid transparent;
+        }
+    }
+
+    &__box {
+
+        &--1 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+        }
+
+        &--2 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__timeline {
+        width: 50%;
+    }
 
     &__container {
-        padding: 20px;
+        width: 100%;
         display: flex;
         flex-direction: column;
-
-        &--history {}
-
-        &--education {}
-
-        &--skills {}
-
-        &--hobbies {}
-    }
-
-    &__title {
-        color: #cea0a0;
-        font-size: 40px;
-        font-family: "futura";
-        letter-spacing: -3px;
-        display: flex;
-
-        &--history {}
-
-        &--education {
-            justify-content: end;
-        }
-
-        &--skills {}
-
-        &--hobbies {
-            justify-content: end;
-        }
-
-    }
-
-    &__description {
-        color: #5928e5;
-        font-size: 15px;
-        font-family: "futura";
-        display: flex;
-
+        height: 100px;
+        width: 400px;
+        padding: 10px;
+        border-radius: 4%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        text-align: center;
 
         &--history {
-            width: 50%;
+            width: 30%;
+            height: 450px;
+        }
+
+        // &--education {}
+
+        // &--hobbies {}
+
+        // &--skills {}
+    }
+
+    &__icon{
+        width: 30px;
+        height: 30px;
+    }
+    &__title {
+        color: #cea0a0;
+        font-family: "Integral";
+        letter-spacing: -1px;
+        margin-top: 0;
+        text-align: center;
+
+        &--history {
+            font-size: 50px;
+            
         }
 
         &--education {
-            list-style: url('../../UI/Image/diplome-logo.png');
-            align-items: flex-end;
-            flex-direction: column;
+            font-size: 20px;
+        }
+
+        &--hobbies {
+            font-size: 20px;
         }
 
         &--skills {
-            letter-spacing: 3px;
-        }
-
-        &--hobbies {
-
-            letter-spacing: 3px;
-            justify-content: flex-end;
+            font-size: 20px;
         }
     }
+    &__parkour{
+        font-size: 90px;
+    }
+     
+    &__description {
+        color: rgba(29, 29, 29, 255);
+        font-size: 17px;
+        font-family: "futura";
 
+        &--history {
+            font-size: 19px;
+            text-align: justify;
 
+        }
 
-  
+        &--education {
+            list-style: none;
+            line-height: 20px;
+        }
+
+    //     &--hobbies {}
+
+    //     &--skills {}
+    }
 }
