@@ -3,19 +3,9 @@
     src: local("Futura"), url(../../UI/Fonts/Futura-Bold-font.ttf) format('truetype');
 }
 
-// .title {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     font-family: "Integral";
-//     font-size: 70px;
-//     letter-spacing: -2px;
-//     color: #cea0a0;
-
-// }
-
 .timeline {
     margin-top: 10px;
+
 
     &__beginner {
         position: relative;
@@ -39,15 +29,16 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        box-shadow: white 0px 2px 2px;
+        background-color: #F5F6FB;
 
         &--bx1 {
             grid-column: span 1;
             grid-row: span 1;
-            background-color: rgb(84, 76, 236, 0.2);
+
 
             &:hover {
-                background-color: rgb(84, 76, 236, 0.8);
+                background-color: rgba(84, 76, 236, 255);
             }
 
             @media screen and (max-width:1091px) {
@@ -60,10 +51,10 @@
             grid-column: span 2;
             grid-row: span 1;
             justify-content: flex-start;
-            background-color: rgb(84, 76, 236, 0.2);
+
 
             &:hover {
-                background-color: rgb(84, 76, 236, 0.8);
+                background-color: rgba(84, 76, 236, 255);
             }
 
             @media screen and (max-width:1091px) {
@@ -76,10 +67,10 @@
         &--bx3 {
             grid-column: span 2;
             grid-row: span 1;
-            background-color: rgb(84, 76, 236, 0.2);
+
 
             &:hover {
-                background-color: rgb(84, 76, 236, 0.8);
+                background-color: rgba(84, 76, 236, 255);
             }
 
             @media screen and (max-width:1091px) {
@@ -92,7 +83,7 @@
         &--bx4 {
             grid-column: span 2;
             grid-row: span 2;
-            background-color: rgba(255, 220, 214, 0.6);
+
 
             &:hover {
                 background-color: rgba(255, 220, 214, 255);
@@ -107,7 +98,7 @@
         &--bx5 {
             grid-column: span 3;
             grid-row: span 2;
-            background-color: rgba(255, 220, 214, 0.6);
+
 
             &:hover {
                 background-color: rgba(255, 220, 214, 255);
@@ -122,7 +113,7 @@
         &--bx6 {
             grid-column: span 6;
             grid-row: span 1;
-            background-color: rgba(38, 185, 154, 0.2);
+
 
             &:hover {
                 background-color: rgba(38, 185, 154, 255);
@@ -140,7 +131,7 @@
         font-size: 15px;
         letter-spacing: 1px;
         width: 100%;
-        color: rgba(29, 29, 29, 255)
+        color: rgba(29, 29, 29, 255);
     }
 
 
@@ -152,7 +143,7 @@
         text-align: justify;
         color: rgba(29, 29, 29, 255);
 
-        &--k{
+        &--k {
             text-align: center;
         }
     }

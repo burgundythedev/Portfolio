@@ -5,9 +5,9 @@ import { ScrollToPlugin } from "gsap/all";
 import htmlLogo from "../../UI/Image/html.png";
 import cssLogo from "../../UI/Image/css.png";
 import jsLogo from "../../UI/Image/js-logo.png";
-import wpLogo from "../../UI/Image/github-icon.png";
-import ghLogo from "../../UI/Image/mysql-icon.png";
-import sqlLogo from "../../UI/Image/wordpress-icon.png";
+import githubLogo from "../../UI/Image/git-hub-icon.png";
+import mysqlLogo from "../../UI/Image/mysql-icon.png";
+import wpLogo from "../../UI/Image/wordpress-icon.png";
 import reactLogo from "../../UI/Image/react-logo.png";
 import laraLogo from "../../UI/Image/laravel-icon.png";
 import phpLogo from "../../UI/Image/php.png";
@@ -87,16 +87,6 @@ const Timeline = () => {
   }, []);
   return (
     <React.Fragment>
-      {/* <h1 className="title" ref={myRef}>
-        <span className="letter">T</span>
-        <span className="letter">I</span>
-        <span className="letter">M</span>
-        <span className="letter">E</span>
-        <span className="letter">L</span>
-        <span className="letter">I</span>
-        <span className="letter">N</span>
-        <span className="letter">E</span>
-      </h1> */}
       <section className="timeline" id="nextSection">
         <div id="start1" className="timeline__beginner">
           <div className="timeline__wrap timeline__wrap--bx1">
@@ -142,8 +132,8 @@ const Timeline = () => {
               <img src={cssLogo} alt="logo" className="timeline__logo" />
               <img src={htmlLogo} alt="logo" className="timeline__logo" />
               <img src={wpLogo} alt="logo" className="timeline__logo" />
-              <img src={ghLogo} alt="logo" className="timeline__logo" />
-              <img src={sqlLogo} alt="logo" className="timeline__logo" />
+              <img src={githubLogo} alt="logo" className="timeline__logo" />
+              <img src={mysqlLogo} alt="logo" className="timeline__logo" />
             </div>
           </div>
           <div className="timeline__wrap timeline__wrap--bx3">

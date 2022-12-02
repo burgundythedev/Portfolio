@@ -6,7 +6,7 @@ import Timeline from "../Timeline/Timeline";
 const About = () => {
   return (
     <AboutWrapper>
-      <div className="about">
+      <div id="about" className="about">
         <div className="about__box  about__box--1">
           <div className="about__container about__container--history">
             <h1 className="about__title about__title--history">

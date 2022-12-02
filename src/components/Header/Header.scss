@@ -1,0 +1,85 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Futura";
+    color: #F5F6FB;
+    background-color: transparent;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    &__name {
+        font-size: 20px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    &__wrapper-menu {
+        position: fixed;
+        top:0;
+        right: 50px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #cea0a0;
+     
+        
+
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        animation: hithere 5s ease infinite;
+
+        @keyframes hithere {
+            30% {
+                transform: scale(1.2);
+            }
+
+            
+            60% {
+                transform: rotate(-20deg) scale(1.2);
+            }
+
+            50% {
+                transform: rotate(20deg) scale(1.2);
+            }
+
+            70% {
+                transform: rotate(0deg) scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    }
+
+    &__link {
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+        &:link,
+        &:visited,
+        &:hover {
+            text-decoration: none;
+            
+
+        }
+
+        &:visited {
+            color: white;
+        }
+
+        &:hover {
+            border-radius: 5000px;
+            background-color:  rgba(255, 220, 214, 0.4);
+            
+        }
+    }
+}

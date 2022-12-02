@@ -10,7 +10,8 @@
     background-image: url("../../UI/Image/right-chevron.png");
     background-repeat: no-repeat;
     background-position: 28% 58%;
-    background-size: 15%;
+    background-size: 5%;
+    
 
     &__triangle {
 
@@ -18,18 +19,18 @@
             display: inline-block;
             height: 0;
             width: 0;
-            border-top: 87px solid transparent;
-            border-bottom: 87px solid transparent;
-            border-left: 180px solid #5928e5;
+            border-top: 57px solid transparent;
+            border-bottom: 57px solid transparent;
+            border-left: 80px solid #5928e5;
         }
 
         &--2 {
             display: inline-block;
             height: 0;
             width: 0;
-            border-top: 187px solid transparent;
-            border-right: 280px solid #5928e5;
-            border-bottom: 187px solid transparent;
+            border-top: 57px solid transparent;
+            border-right: 80px solid #5928e5;
+            border-bottom: 57px solid transparent;
         }
     }
 
@@ -49,6 +50,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            margin-top: 100px;
         }
     }
 
@@ -67,22 +69,18 @@
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         text-align: center;
 
+
         &--history {
             width: 30%;
             height: 450px;
         }
-
-        // &--education {}
-
-        // &--hobbies {}
-
-        // &--skills {}
     }
 
-    &__icon{
+    &__icon {
         width: 30px;
         height: 30px;
     }
+
     &__title {
         color: #cea0a0;
         font-family: "Integral";
@@ -92,7 +90,7 @@
 
         &--history {
             font-size: 50px;
-            
+
         }
 
         &--education {
@@ -107,14 +105,16 @@
             font-size: 20px;
         }
     }
-    &__parkour{
+
+    &__parkour {
         font-size: 90px;
     }
-     
+
     &__description {
         color: rgba(29, 29, 29, 255);
         font-size: 17px;
         font-family: "futura";
+        color: #F5F6FB;
 
         &--history {
             font-size: 19px;
@@ -126,9 +126,5 @@
             list-style: none;
             line-height: 20px;
         }
-
-    //     &--hobbies {}
-
-    //     &--skills {}
     }
 }
