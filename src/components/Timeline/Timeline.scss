@@ -4,9 +4,7 @@
 }
 
 .timeline {
-    margin-top: 10px;
-
-
+    z-index: 0;
     &__beginner {
         position: relative;
         max-width: 100%;
@@ -14,7 +12,7 @@
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         grid-template-rows: minmax(500px, auto-fill);
         grid-auto-flow: dense;
-        gap: 10px 5px;
+        gap: 10px 10px;
 
         @media screen and (max-width:1091px) {
             grid-template-columns: repeat(50%, minmax(300px, 1fr));
@@ -24,22 +22,19 @@
     }
 
     &__wrap {
-        border-radius: 2%;
+        border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        box-shadow: white 0px 2px 2px;
-        background-color: #F5F6FB;
+        background-color: #5928e5;
+        
+        
 
         &--bx1 {
-            grid-column: span 1;
+            grid-column: span 2;
             grid-row: span 1;
 
-
-            &:hover {
-                background-color: rgba(84, 76, 236, 255);
-            }
 
             @media screen and (max-width:1091px) {
                 grid-column: unset !important;
@@ -53,9 +48,6 @@
             justify-content: flex-start;
 
 
-            &:hover {
-                background-color: rgba(84, 76, 236, 255);
-            }
 
             @media screen and (max-width:1091px) {
                 grid-column: unset !important;
@@ -65,13 +57,10 @@
         }
 
         &--bx3 {
-            grid-column: span 2;
+            grid-column: span 1;
             grid-row: span 1;
 
 
-            &:hover {
-                background-color: rgba(84, 76, 236, 255);
-            }
 
             @media screen and (max-width:1091px) {
                 grid-column: unset !important;
@@ -84,11 +73,6 @@
             grid-column: span 2;
             grid-row: span 2;
 
-
-            &:hover {
-                background-color: rgba(255, 220, 214, 255);
-            }
-
             @media screen and (max-width:1091px) {
                 grid-column: unset !important;
                 grid-row: unset !important;
@@ -100,9 +84,7 @@
             grid-row: span 2;
 
 
-            &:hover {
-                background-color: rgba(255, 220, 214, 255);
-            }
+
 
             @media screen and (max-width:1091px) {
                 grid-column: unset !important;
@@ -111,13 +93,11 @@
         }
 
         &--bx6 {
-            grid-column: span 6;
+            grid-column: span 5;
             grid-row: span 1;
 
 
-            &:hover {
-                background-color: rgba(38, 185, 154, 255);
-            }
+
 
             @media screen and (max-width:1091px) {
                 grid-column: unset !important;
@@ -132,16 +112,17 @@
         letter-spacing: 1px;
         width: 100%;
         color: rgba(29, 29, 29, 255);
+        color: black;
     }
 
 
 
     &__description {
         width: 100%;
-        font-size: 17px;
+        font-size: 16px;
         font-family: "Futura";
-        text-align: justify;
-        color: rgba(29, 29, 29, 255);
+        color: white;
+       
 
         &--k {
             text-align: center;
@@ -149,24 +130,24 @@
     }
 
     &__logo {
-        width: 20px;
-        height: 20px;
+        width: 17px;
+        height: 17px;
         margin-left: 2px;
     }
 
     &__first {
-        padding: 10px;
+   padding: 10px;
 
         &--fcc {
             width: 90%;
         }
 
         &--it {
-            width: 80%;
+            width: 90%;
         }
 
         &--intern {
-            width: 80%;
+            width: 90%;
         }
 
         &--i {
@@ -186,7 +167,7 @@
     &__icon {
         display: flex;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 5px;
 
 
         &--1 {
@@ -215,7 +196,7 @@
         }
 
         &--4 {
-            justify-content: space-between;
+            justify-content: center;
             border-bottom: 1px solid black;
 
         }
@@ -233,8 +214,8 @@
     }
 
     &__man {
-        width: 20px;
-        height: 20px;
+        width: 45px;
+        height: 45px;
     }
 
 

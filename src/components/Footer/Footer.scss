@@ -1,0 +1,13 @@
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #cea0a0;
+    opacity: 0.2;
+
+    &__text {
+        font-family: "Integral";
+        font-size: 10px;
+    }
+  
+}

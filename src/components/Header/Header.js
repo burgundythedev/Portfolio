@@ -28,12 +28,12 @@ const Header = () => {
         </Link>
         <Link
           className="header__link"
-          to="portofolio"
+          to="portfolio"
           spy={true}
           smooth={true}
           duration={1500}
         >
-          Portofolio
+          Portfolio
         </Link>
         <Link
           className="header__link"

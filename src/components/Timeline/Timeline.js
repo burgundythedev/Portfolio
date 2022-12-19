@@ -119,12 +119,13 @@ const Timeline = () => {
             <div className="timeline__first timeline__first--it">
               <h1 className="timeline__date">
                 2021
-                <span className="timeline__ref"> - Training Web Dev</span>
+                <span className="timeline__ref">
+                  - Training Web Dev (IT-Akademy)
+                </span>
               </h1>
               <p className="timeline__description">
-                9th months of training at IT-Akademy, I've learned and worked on
-                different timelines with PhP, JS, HTML, CSS, MySQL, Laravel,
-                WordPress, GitHub & more
+                I've worked on different technologies like PhP, JS, HTML, CSS,
+                MySQL, Laravel, WordPress, GitHub & more
               </p>
               <img src={phpLogo} alt="logo" className="timeline__logo" />
               <img src={laraLogo} alt="logo" className="timeline__logo" />
@@ -144,11 +145,11 @@ const Timeline = () => {
             <div className="timeline__first timeline__first--intern">
               <h1 className="timeline__date">
                 2021
-                <span className="timeline__ref"> - Intership</span>
+                <span className="timeline__ref"> - Internship</span>
               </h1>
               <p className="timeline__description">
-                4 months internship with a freelance web developer, creating my
-                first timelines with React.Js
+                During 4 months internship, I,ve learned and created projects
+                with React.js.
               </p>
               <img src={reactLogo} alt="logo" className="timeline__logo" />
             </div>
@@ -156,7 +157,7 @@ const Timeline = () => {
           <div className="timeline__wrap timeline__wrap--bx4">
             <div className="timeline__icon timeline__icon--4">
               <img className="timeline__man" src={diplomaMan} alt="logo-walk" />
-              <img className="timeline__man" src={climbMan} alt="logo-walk" />
+              {/* <img className="timeline__man" src={climbMan} alt="logo-walk" /> */}
             </div>
             <div className="timeline__first timeline__first--i">
               <h1 className="timeline__date">
@@ -165,7 +166,7 @@ const Timeline = () => {
               </h1>
               <p className="timeline__description">
                 Oral and visual presentation of personnal Projects and knowledge
-                develop during the internship and school training
+                developed during the internship and school training
               </p>
               <img
                 src={dplLogo}

@@ -6,17 +6,21 @@ import About from "./components/About/About";
 import Project from "./components/Project/Project";
 import Form from "./components/Contact/Form";
 import WrapperBack from "./UI/WrapperBack";
+import Blog from "./components/Blog/Blog";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="app" style={{ cursor: `url(cursor.png), auto ` }}>
+    <div className="app">
       <WrapperBack>
         <Header />
         <Presentation />
       </WrapperBack>
       <About />
       <Project />
+      <Blog />
       <Form />
+      <Footer />
     </div>
   );
 }

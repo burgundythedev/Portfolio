@@ -7,73 +7,51 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url("../../UI/Image/right-chevron.png");
+    background-image: url(../../UI/Image/jump1.png);
     background-repeat: no-repeat;
-    background-position: 28% 58%;
-    background-size: 5%;
-    
+    background-size: 45px;
+    background-position: 35% 16%;
 
-    &__triangle {
 
-        &--1 {
-            display: inline-block;
-            height: 0;
-            width: 0;
-            border-top: 57px solid transparent;
-            border-bottom: 57px solid transparent;
-            border-left: 80px solid #5928e5;
-        }
-
-        &--2 {
-            display: inline-block;
-            height: 0;
-            width: 0;
-            border-top: 57px solid transparent;
-            border-right: 80px solid #5928e5;
-            border-bottom: 57px solid transparent;
-        }
+    &__box-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     &__box {
+        display: flex;
 
         &--1 {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
+            width: 30%;
+            height: 800px;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
 
         }
 
         &--2 {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            width: 60%;
+            height: 800px;
             align-items: center;
-            margin-top: 100px;
         }
-    }
-
-    &__timeline {
-        width: 50%;
     }
 
     &__container {
         width: 100%;
         display: flex;
         flex-direction: column;
-        height: 100px;
-        width: 400px;
-        padding: 10px;
-        border-radius: 4%;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-        text-align: center;
+        align-items: center;
+        width: 550px;
+        height: 600px;
+        border: 1px solid black;
+        background-color: #cea0a0;
+        padding: 20px;
+        box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px 0px;
 
 
-        &--history {
-            width: 30%;
-            height: 450px;
-        }
     }
 
     &__icon {
@@ -82,23 +60,26 @@
     }
 
     &__title {
-        color: #cea0a0;
+        color: white;
         font-family: "Integral";
-        letter-spacing: -1px;
-        margin-top: 0;
-        text-align: center;
+
+        &--about {
+            display: flex;
+            justify-content: center;
+            color: #cea0a0;
+            font-size: 90px;
+        }
 
         &--history {
-            font-size: 50px;
+            font-size: 60px;
+            color: white;
 
         }
 
-        &--education {
-            font-size: 20px;
-        }
-
-        &--hobbies {
-            font-size: 20px;
+        &--fromto {
+            margin: 0;
+            font-size: 15px;
+            letter-spacing: 5px;
         }
 
         &--skills {
@@ -106,25 +87,24 @@
         }
     }
 
-    &__parkour {
-        font-size: 90px;
-    }
 
     &__description {
-        color: rgba(29, 29, 29, 255);
-        font-size: 17px;
-        font-family: "futura";
-        color: #F5F6FB;
+        font-size: 15px;
+        font-family: "Integral";
+        color: black;
+        margin-top: 50px;
+
 
         &--history {
-            font-size: 19px;
+            font-size: 15px;
+            width: 100%;
             text-align: justify;
-
+            margin-bottom: 50px;
         }
 
-        &--education {
-            list-style: none;
-            line-height: 20px;
+        &--skills {
+            margin-top: -5px;
         }
+
     }
 }
