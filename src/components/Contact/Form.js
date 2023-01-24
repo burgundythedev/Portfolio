@@ -3,7 +3,6 @@ import "./Form.scss";
 import FormWrapper from "../../UI/FormWrapper";
 import emailjs from "@emailjs/browser";
 import astroMan from "../../UI/Image/astronaut-white.png";
-import planet from "../../UI/Image/world.png";
 
 const Form = () => {
   const [statusMessage, setStatusMessage] = useState("");
@@ -44,45 +43,58 @@ const Form = () => {
       <FormWrapper>
         <div id="contact" className="form">
           <h1 className="form__title form__title--1">Contact</h1>
-          <div className="form__container form__container--1">
-            <form
-              ref={form}
-              onSubmit={sendEmail}
-              className="form__form-container"
-            >
-              <p className="form__title form__title--2">"Open to work! "</p>
-              <h1 className="form__sent">{statusMessage}</h1>
-              <div className="form__input-box form__input-box--1">
-                <label className="form__label" for="email">
-                  Your email:
-                </label>
-                <input
-                  required="required"
-                  className="form__input "
-                  type="email"
-                  name="email_adress"
-                  placeholder="Email Adress"
+          <p className="form__status">
+            Get In Touch! I’m currently looking for any new opportunities, my
+            inbox is always open. Whether you have a question or just want to
+            say hi, I’ll get back to you!
+          </p>
+          <div className="form__card">
+            <div className="form__container form__container--2">
+              <div class="drops">
+                <div className="form__drop form__drop--1"></div>
+                <div className="form__drop form__drop--2"></div>
+                <div className="form__drop form__drop--3"></div>
+                <div className="form__drop form__drop--4"></div>
+              </div>
+              <form
+                ref={form}
+                onSubmit={sendEmail}
+                className="form__form-container"
+              >
+                <h1 className="form__sent">{statusMessage}</h1>
+                <div className="form__input-box form__input-box--1">
+                  <label className="form__label" for="email">
+                    Your email:
+                  </label>
+                  <input
+                    required="required"
+                    className="form__input "
+                    type="email"
+                    name="email_adress"
+                    placeholder="Email Adress"
+                  />
+                </div>
+                <div className="form__input-box form__input-box--2">
+                  <label className="form__label" for="subject">
+                    Subject :
+                  </label>
+                  <textarea
+                    required="required"
+                    className="form__subject"
+                    name="subject_message"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <input value="Send" className="form__button" type="submit" />
+              </form>
+              <div className="form__container form__container--3">
+                <img
+                  className="form__icon"
+                  src={astroMan}
+                  alt="astronaut-icon"
                 />
+                <h1 className="form__location">Paris, France</h1>
               </div>
-              <div className="form__input-box form__input-box--2">
-                <label className="form__label" for="subject">
-                  Subjects :
-                </label>
-                <textarea
-                  required="required"
-                  className="form__input"
-                  name="subject_message"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <input value="Send" className="form__button" type="submit" />
-            </form>
-          </div>
-          <div className="form__container form__container--2">
-            <img className="form__icon" src={astroMan} alt="astronaut-icon" />
-            <div className="form_img">
-              <img src={planet} alt="" className="form__planet" />
-              <h1 className="form__location">Paris, France</h1>
             </div>
           </div>
         </div>

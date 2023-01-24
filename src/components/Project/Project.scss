@@ -4,79 +4,83 @@
     flex-direction: column;
 
 
-    &__status {
-        text-align: center;
-    }
 
     &__box-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+
     }
 
     &__box {
-        display: flex;
-
+        &--1 {
+            margin: 100px 0px 100px 0px;
+        }
 
         &--2 {
-            height: 800px;
+
             display: grid;
-            grid-template-columns: repeat(4, 400px);
-            grid-gap: 50px;
-            align-items: center;
+            grid-template-columns: repeat(4, 250px);
+            grid-gap: 25px;
+
+            @media only screen and (max-width: 1200px) {
+                grid-template-columns: repeat(2, 275px);
+            }
+
+            @media only screen and (max-width: 700px) {
+                grid-template-columns: repeat(2, 275px);
+            }
+            @media only screen and (max-width: 600px) {
+                grid-template-columns: repeat(1, 275px);
+            }
+            @media only screen and (max-width: 420px) {
+                grid-template-columns: repeat(1, 235px);
+            }
         }
     }
 
     &__status {
         font-family: "Integral";
         font-size: 70px;
-        color: #cea0a0;
-
+        color: rgba(255, 217, 217);
+        text-align: center;
+        text-shadow: 1px 1px 2px black;
+        @media only screen and (max-width: 600px) {
+            font-size: 50px;
+        }
 
     }
 
     &__card {
-        height: 400px;
+        height: 250px;
         padding: 20px;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border-radius: 5%;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.9);
+
 
         &--card1 {
-            background-image: url("../../UI/Image/moviedbScreen.png");
-            background-size: cover;
+            text-align: center;
         }
 
-        &--card2 {
-            background-image: url("../../UI/Image/moviedbScreen.png");
-            background-size: cover;
-        }
+        &--card2 {}
 
-        &--card3 {
-            background-image: url("../../UI/Image/moviedbScreen.png");
-            background-size: cover;
-        }
+        &--card3 {}
 
-        &--card4 {
-            background-image: url("../../UI/Image/moviedbScreen.png");
-            background-size: cover;
-        }
+        &--card4 {}
     }
 
     &__title {
         font-family: "Integral";
-        color: rgba(84, 76, 236)
+        color: rgba(84, 76, 236);
     }
 
-    &__description {
-        font-family: "Futura";
-        text-align: center;
-        color: #D6D6E7;
-    }
+    &__description {}
 
     &__screen {
-        width: 250px;
-        height: 150px;
+        width: 350px;
+        height: 250px;
         border-radius: 5%;
     }
 

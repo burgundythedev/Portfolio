@@ -6,7 +6,9 @@ import homeLogo from "../../UI/Image/home.png";
 const Header = () => {
   return (
     <div id="home" className="header">
-      <h1 className="header__name">Olivier Bourgogne</h1>
+      <div className="header__container">
+        <h1 className="header__name">Olivier Bourgogne</h1>
+      </div>
       <div className="header__wrapper-menu">
         <Link
           className="header__link"
@@ -34,15 +36,6 @@ const Header = () => {
           duration={1500}
         >
           Portfolio
-        </Link>
-        <Link
-          className="header__link"
-          to="blog"
-          spy={true}
-          smooth={true}
-          duration={1500}
-        >
-          Blog
         </Link>
         <Link
           className="header__link"

@@ -4,7 +4,7 @@ import PresentationWrapper from "../../UI/PresentationWrapper";
 import picID from "../../UI/Image/picID.png";
 import github from "../../UI/Image/icons8-github-128.png";
 import linkedin from "../../UI/Image/icons8-linkedin-100.png";
-import arrow from "../../UI/Image/arrowup.png";
+import resume from "../../UI/Image/CV 2023-Olivier Bourgogne-Developpeur Web.pdf";
 
 const Presentation = () => {
   return (
@@ -56,8 +56,18 @@ const Presentation = () => {
               <div className="presentation__mousey">
                 <div className="presentation__scroller"></div>
               </div>
-              <p>or Click on Menu</p>
-              <img src={arrow} alt="arrow" />
+            </div>
+            <div>
+              <button className="presentation__button">
+                <a
+                  href={resume}
+                  className="presentation__resume"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Resume
+                </a>
+              </button>
             </div>
           </div>
         </div>

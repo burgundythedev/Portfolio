@@ -1,19 +1,41 @@
 import React from "react";
-import BlogWrapper from "../../UI/BlogWrapper";
 import "./Blog.scss";
+import pic from "../../UI/Image/picID.png";
+import pen from "../../UI/Image/pen.png";
 
 const Blog = () => {
   return (
-    <BlogWrapper>
-      <div id="blog" className="blog">
-        <h1>Blog</h1>
-        <p>
-          Bonjour:)!, you can keep tracking what I'm working on and learning
-          with this section. I will update this Blog every time that I'm
-          learning, creating !
-        </p>
+    <div id="blog" className="blog">
+      <p className="blog__info">Stay up-to-date with my latest news</p>
+      <div className="blog__post-container">
+        <div className="blog__box">
+          <div class="blog__post">
+            <div class="blog__pic">
+              <img className="blog__img" src={pic} alt="pic-id" />
+            </div>
+            <div class="blog__container">
+              <h3 className="blog__text blog__text--1">15th January 2023</h3>
+              <h1 className="blog__text blog__text--2">
+                <img src={pen} className="blog__icon" alt="icon" />
+                Adding a Watchlist to my MovieDB Projects
+              </h1>
+            </div>
+          </div>
+          <div class="blog__post">
+            <div class="blog__pic">
+              <img className="blog__img" src={pic} alt="pic-id" />
+            </div>
+            <div class="blog__container">
+              <h3 className="blog__text blog__text--1">1st January 2023</h3>
+              <h1 className="blog__text blog__text--2">
+                <img src={pen} className="blog__icon" alt="icon" />
+                Applying for Job Offers in Paris
+              </h1>
+            </div>
+          </div>
+        </div>
       </div>
-    </BlogWrapper>
+    </div>
   );
 };
 
