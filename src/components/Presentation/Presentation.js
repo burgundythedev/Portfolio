@@ -1,20 +1,48 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { ScrollToPlugin } from "gsap/all";
 import "./Presentation.scss";
 import PresentationWrapper from "../../UI/PresentationWrapper";
 import picID from "../../UI/Image/picID.png";
-import github from "../../UI/Image/icons8-github-128.png";
-import linkedin from "../../UI/Image/icons8-linkedin-100.png";
-import resume from "../../UI/Image/CV 2023-Olivier Bourgogne-Developpeur Web.pdf";
 
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 const Presentation = () => {
+  const titleRef = useRef();
+  const onLoad = () => {
+    gsap.timeline().fromTo(
+      ".letter",
+      {
+        x: -100,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        stagger: 0.5,
+        delay: 1.5,
+      }
+    );
+  };
+
+  useEffect(() => {
+    onLoad();
+  }, []);
+
   return (
     <PresentationWrapper>
       <div className="presentation">
         <div className="presentation__wrapper">
           <div className="presentation__box-hello">
-            <p className="presentation__name">
-              Hi! I'm
-              <span> Olivier</span>, a Web Developer.
+            <p ref={titleRef} className="presentation__name">
+              Hi! I'm&nbsp;
+              <span className="letter">O</span>
+              <span className="letter">l</span>
+              <span className="letter">i</span>
+              <span className="letter">v</span>
+              <span className="letter">i</span>
+              <span className="letter">e</span>
+              <span className="letter">r</span>, a Web Developer
             </p>
           </div>
           <div className="presentation__pic  presentation__pic">
@@ -27,47 +55,13 @@ const Presentation = () => {
               </p>
             </div>
           </div>
+
           <div className="presentation__box-status">
-            <div className="presentation__box-icon">
-              <a
-                href="https://github.com/burgundythedev"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  className="presentation__icon"
-                  src={github}
-                  alt="social-icon"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/olivier-bourgogne/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  className="presentation__icon"
-                  src={linkedin}
-                  alt="social-icon"
-                />
-              </a>
-            </div>
+            <h1 className="presentation__look">Take a look around</h1>
             <div className="presentation__scroll-downs">
               <div className="presentation__mousey">
                 <div className="presentation__scroller"></div>
               </div>
-            </div>
-            <div>
-              <button className="presentation__button">
-                <a
-                  href={resume}
-                  className="presentation__resume"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Resume
-                </a>
-              </button>
             </div>
           </div>
         </div>

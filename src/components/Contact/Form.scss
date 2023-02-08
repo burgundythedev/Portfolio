@@ -6,66 +6,206 @@ $white: white;
   flex-direction: column;
   align-items: center;
 
-  &__card {
+  &__box-element {
+    width: 84%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    margin-top: 150px;
-    @media only screen and (max-width: 500px) {
-      margin-top: 50px;
+    margin-top: 50px;
+
+    @media only screen and (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
     }
   }
 
-  &__container {
+  &__box-title {
     display: flex;
+    justify-content: flex-start;
+    margin-top: 97px;
 
-    &--2 {
-      width: 600px;
-      height: 400px;
-      border-radius: 20px;
-      background: rgba(89, 40, 229, 0.9);
+    @media only screen and (max-width: 1400px) {
+      margin-top: 90px;
+    }
+  }
 
-      @media only screen and (max-width: 750px) {
-        width: 450px;
-      }
+  &__box-description {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
 
-      @media only screen and (max-width: 540px) {
-        width: 400px;
-      }
-      @media only screen and (max-width: 450px) {
-        width: 300px;
-        justify-content: center;
-        align-items: center;
-      }
+    @media only screen and (max-width: 700px) {
+      width: 300px;
+    }
+    
+  }
+
+  &__box-container {
+    width: 400px;
+
+    @media only screen and (max-width: 1400px) {
+      width: 300px;
+    }
+  }
+
+  &__message {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+
+    @media only screen and (max-width: 1500px) {
+      font-size: 27px;
+      width: 90%;
     }
 
-    &--3 {
-      width: 200px;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    @media only screen and (max-width: 1400px) {
+      text-align: center;
+      font-size: 25px;
+      width: 70%;
+    }
+
+    @media only screen and (max-width: 900px) {
+      width: 600px;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 22px;
+      width: 400px;
+    }
+    @media only screen and (max-width: 450px) {
+      font-size: 20px;
+      width: 300px;
     }
   }
 
   &__title {
-    &--1 {
-      font-size: 70px;
-      color: rgba(255, 217, 217);
-      margin: 0;
-      text-align: center;
-      text-shadow: 1px 1px 2px black;
-      @media only screen and (max-width: 600px) {
-        font-size: 50px;
-      }
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-family: "Integral";
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 1px 2px grey;
+
+    @media only screen and (max-width: 1100px) {
+      flex-direction: column;
+      align-items: center;
     }
   }
 
-  &__form-container {
-    padding: 20px;
+
+  &__span {
+    font-size: 25px;
+  }
+
+  &__line-title {
+    width: 1000px;
+    border: 1px solid #cea0a0;
+    margin-left: 10px;
+
+    @media only screen and (max-width: 1600px) {
+      width: 900px;
+    }
+
+    @media only screen and (max-width: 1500px) {
+      width: 800px;
+    }
+
+    @media only screen and (max-width: 1400px) {
+      width: 600px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      width: 400px;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      width: 300px;
+    }
+  }
+
+  &__text {
+    font-family: "Integral";
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: black;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+
+    @media only screen and (max-width: 900px) {
+      margin: 5px;
+    }
+ 
+  }
+
+  &__container-contact {
+    @media only screen and (max-width: 1400px) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media only screen and (max-width: 900px) {
+      display: flex;
+    }
+  }
+
+  &__details {
+    @media only screen and (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__box-icon {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media only screen and (max-width: 1400px) {
+      display: flex;
+   
+    }
+
+    @media only screen and (max-width: 900px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 5px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 25%;
+
+    &:hover {
+      background-color: rgba(84, 76, 236, 0.5);
+    }
+  }
+
+  &__astro {
+    width: 100px;
+  }
+
+  &__sent {
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(84, 76, 236);
+  }
+
+  &__label {
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: rgba(84, 76, 236, 0.6);
+
+    @media only screen and (max-width: 900px) {
+      text-align: center;
+    }
   }
 
   &__input-box {
@@ -73,177 +213,189 @@ $white: white;
     flex-direction: column;
   }
 
-  &__label {
-    color: black;
-    font-size: 20px;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-
-    @media only screen and (max-width: 750px) {
-      font-size: 15px;
-    }
-
-    @media only screen and (max-width: 500px) {
-      font-size: 10px;
-    }
-  }
-
   &__input {
     width: 300px;
     height: 20px;
     padding: 1em;
     margin-bottom: 2em;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Orbitron";
     border-radius: 5px;
     font-size: 15px;
 
-    @media only screen and (max-width: 750px) {
+    @media only screen and (max-width: 1400px) {
       width: 200px;
     }
   }
 
   &__subject {
-    width: 300px;
-    height: 100px;
+    width: 400px;
+    height: 150px;
     padding: 1em;
     margin-bottom: 2em;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Orbitron";
     border-radius: 5px;
     font-size: 15px;
-    @media only screen and (max-width: 750px) {
+
+    @media only screen and (max-width: 1500px) {
+      width: 300px;
+    }
+
+    @media only screen and (max-width: 1400px) {
       width: 200px;
-      height: 50px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      height: 20px;
     }
   }
 
-  &__status {
-    width: 50%;
-    font-family: "Montserrat", sans-serif;
-    font-size: 25px;
-    text-align: center;
-    color: black;
-
-    @media only screen and (max-width: 1050px) {
-      width: 70%;
-    }
-
-    @media only screen and (max-width: 750px) {
-      width: 80%;
-      font-size: 18px;
-    }
-
-    @media only screen and (max-width: 550px) {
-      font-size: 15px;
-    }
+  &__sphere {
+    display: flex;
   }
 
   &__button {
-    background-color: white;
+    background-color:  rgba(255, 217, 217, 0.7);
     letter-spacing: 0;
     font-family: "Integral";
-    color: black;
+    border: 1px solid black;
     padding: 5px;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
 
     &:hover {
       letter-spacing: 3px;
     }
   }
 
-  &__icon {
-    width: 150px;
-    animation: hinge 5s ease 10;
-    @media only screen and (max-width: 500px) {
-      display: none;
-    }
-    @media only screen and (max-width: 540px) {
-      width: 120px;
+  &__circle-box {
+    display: flex;
+    flex-direction: row;
+
+    @media only screen and (max-width: 1400px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
-  @keyframes hinge {
-    0% {
-      transform: rotate(0);
-      transform-origin: top left;
-      animation-timing-function: ease-in-out;
-    }
-
-    20%,
-    60% {
-      transform: rotate(5deg);
-      transform-origin: top left;
-      animation-timing-function: ease-in-out;
-    }
-
-    40% {
-      transform: rotate(-5deg);
-      transform-origin: top left;
-      animation-timing-function: ease-in-out;
-    }
+  &__shoot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
-  &__location {
-    font-size: 15px;
-    color: black;
-    @media only screen and (max-width: 540px) {
-      font-size: 13px;
-    }
-    @media only screen and (max-width: 500px) {
-      display: none;
-    }
-  }
-
-  &__sent {
-    width: 100%;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    font-family: "Orbitron";
-    @media only screen and (max-width: 500px) {
-      font-size: 15px;
-    }
-  }
-
-  &__drop {
-    background: rgba(206, 160, 160, 0.5);
-    border-radius: 10px;
-    box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    animation: rotate-center 10s ease-in-out both infinite;
-
-    @keyframes rotate-center {
-      0% {
-        transform: rotate(0);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
-    }
+  &__circle {
+    margin-left: -15px;
+    width: 50px;
+    height: 50px;
+    background-color: #cea0a0;
+    border-radius: 50%;
 
     &--1 {
-      height: 100px;
-      width: 100px;
-      top: 4790px;
-      left: 690px;
-      z-index: -1;
+      background-color: rgb(0, 0, 0, 0.5);
+      z-index: 3;
+
+      animation: bounce2 3s ease infinite;
+      animation-delay: 0.4s;
+
+      @keyframes bounce2 {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+
+        40% {
+          transform: translateY(-30px);
+        }
+
+        60% {
+          transform: translateY(-15px);
+        }
+      }
     }
 
     &--2 {
-      height: 100px;
-      width: 100px;
-      top: 5200px;
-      right: 690px;
+      background-color: rgba(84, 76, 236, 0.5);
+      z-index: 2;
+
+      animation: bounce2 3s ease infinite;
+      animation-delay: 0.2s;
+
+      @keyframes bounce2 {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+
+        40% {
+          transform: translateY(-30px);
+        }
+
+        60% {
+          transform: translateY(-15px);
+        }
+      }
     }
 
-    &--4 {
-      height: 170px;
-      width: 170px;
-      top: 4750px;
-      right: 650px;
-      
+    &--3 {
+      background-color: rgb(204, 164, 168, 0.5);
+      z-index: 1;
+
+      animation: bounce2 3s ease infinite;
+      animation-delay: 0.1s;
+
+      @keyframes bounce2 {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+
+        40% {
+          transform: translateY(-30px);
+        }
+
+        60% {
+          transform: translateY(-15px);
+        }
+      }
     }
-    @media only screen and (max-width: 1600px) {
-      display: none;
+  }
+
+  &__sign {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  &__flag {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+
+  &__astro {
+    width: 65px;
+    margin-left: 50px;
+  }
+
+  &__container {
+    @media only screen and (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

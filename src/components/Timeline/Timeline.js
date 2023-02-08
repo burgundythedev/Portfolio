@@ -1,7 +1,7 @@
-// import React, { useEffect } from "react";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/all";
-// import { ScrollToPlugin } from "gsap/all";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { ScrollToPlugin } from "gsap/all";
 import htmlLogo from "../../UI/Image/html.png";
 import cssLogo from "../../UI/Image/css.png";
 import jsLogo from "../../UI/Image/js-logo.png";
@@ -20,11 +20,52 @@ import hikeMan from "../../UI/Image/randonneur.png";
 import rocketMan from "../../UI/Image/homme-ready.png";
 import "./Timeline.scss";
 
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
 const Timeline = () => {
+  const slideInTop = (elem, delay, duration) => {
+    gsap.fromTo(
+      elem,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+
+        delay: delay || 0.4,
+        duration: duration || 0.6,
+        scrollTrigger: {
+          trigger: elem,
+          start: "top bottom",
+          end: "bottom center",
+        },
+      }
+    );
+  };
+
+  useEffect(() => {
+    slideInTop("#top1", "0.4", "0.6");
+  }, []);
+  useEffect(() => {
+    slideInTop("#top2", "0.8", "0.8");
+  }, []);
+  useEffect(() => {
+    slideInTop("#top3", "1.2", "1.2");
+  }, []);
+  useEffect(() => {
+    slideInTop("#top4", "1.6", "1.6");
+  }, []);
+  useEffect(() => {
+    slideInTop("#top5", "2", "2");
+  }, []);
+  useEffect(() => {
+    slideInTop("#top6", "2.4", "2.4");
+  }, []);
+
   return (
     <section className="timeline" id="nextSection">
-      <div id="start1" className="timeline__beginner">
-        <div className="timeline__wrap timeline__wrap--bx1">
+      <div className="timeline__beginner">
+        <div id="top1" className="timeline__wrap timeline__wrap--bx1">
           <div className="timeline__icon timeline__icon--1b">
             <span className="timeline__ref">2021</span>
             <img className="timeline__man" src={walkM} alt="logo-walk" />
@@ -40,7 +81,7 @@ const Timeline = () => {
             <img src={jsLogo} alt="logo" className="timeline__logo" />
           </div>
         </div>
-        <div className="timeline__wrap timeline__wrap--bx2">
+        <div id="top2" className="timeline__wrap timeline__wrap--bx2">
           <div className="timeline__icon timeline__icon--2">
             <span className="timeline__ref">2021</span>
             <img className="timeline__man" src={ropeMan} alt="logo-walk" />
@@ -61,7 +102,7 @@ const Timeline = () => {
             <img src={mysqlLogo} alt="logo" className="timeline__logo" />
           </div>
         </div>
-        <div className="timeline__wrap timeline__wrap--bx3">
+        <div id="top3" className="timeline__wrap timeline__wrap--bx3">
           <div className="timeline__icon timeline__icon--3">
             <span className="timeline__ref">2021</span>
             <img className="timeline__man" src={internMan} alt="logo-walk" />
@@ -75,7 +116,7 @@ const Timeline = () => {
             <img src={reactLogo} alt="logo" className="timeline__logo" />
           </div>
         </div>
-        <div className="timeline__wrap timeline__wrap--bx4">
+        <div id="top4" className="timeline__wrap timeline__wrap--bx4">
           <div className="timeline__icon timeline__icon--4">
             <span className="timeline__ref">2022</span>
             <img className="timeline__man" src={diplomaMan} alt="logo-walk" />
@@ -93,7 +134,7 @@ const Timeline = () => {
             />
           </div>
         </div>
-        <div className="timeline__wrap timeline__wrap--bx5">
+        <div id="top5" className="timeline__wrap timeline__wrap--bx5">
           <div className="timeline__icon timeline__icon--5">
             <span className="timeline__ref"> 2022</span>
             <img className="timeline__man" src={hikeMan} alt="logo-walk" />
@@ -107,7 +148,7 @@ const Timeline = () => {
             <img src={reactLogo} alt="logo" className="timeline__logo" />
           </div>
         </div>
-        <div className="timeline__wrap timeline__wrap--bx6">
+        <div id="top6" className="timeline__wrap timeline__wrap--bx6">
           <div className="timeline__icon timeline__icon--6">
             <img className="timeline__man" src={jumpMan} alt="logo-walk" />
             <span className="timeline__ref">2022</span>

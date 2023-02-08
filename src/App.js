@@ -9,7 +9,6 @@ import WrapperBack from "./UI/WrapperBack";
 import Blog from "./components/Blog/Blog";
 import ProjectWrapper from "./UI/ProjectWrapper";
 import { Helmet } from "react-helmet";
-import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
         <meta charSet="utf-8" />
         <title>O.Bourgogne Web Developer</title>
         <link rel="canonical" href="http://mysite.com/example" />
-        <meta name="description" content="Olivier Bourgogn Portfolio" />
+        <meta name="description" content="Olivier Bourgogne Portfolio" />
       </Helmet>
       <WrapperBack>
         <Header />
@@ -30,7 +29,6 @@ function App() {
         <Blog />
       </ProjectWrapper>
       <Form />
-      <Footer />
     </div>
   );
 }

@@ -1,82 +1,228 @@
-import React from "react";
 import "./Project.scss";
-
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { ScrollToPlugin } from "gsap/all";
+import popcorn from "../../UI/Image/popcorn.png";
+import github from "../../UI/Image/github-form.png";
+import link from "../../UI/Image/link.png";
+import form from "../../UI/Image/form.png";
+import adventure from "../../UI/Image/adventure.png";
+import back from "../../UI/Image/angryimg.png";
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 const Project = () => {
+  const slideInLeft = (elem, delay, duration) => {
+    gsap.fromTo(
+      elem,
+      {
+        opacity: 0,
+        x: -200,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        delay: delay || 0.6,
+        duration: duration || 2,
+        scrollTrigger: {
+          trigger: elem,
+          start: "top center",
+          end: "bottom center",
+        },
+      }
+    );
+  };
+
+  useEffect(() => {
+    slideInLeft("#p1");
+  }, []);
+  useEffect(() => {
+    slideInLeft("#p2");
+  }, []);
+  useEffect(() => {
+    slideInLeft("#p3");
+  }, []);
+  useEffect(() => {
+    slideInLeft("#p4");
+  }, []);
   return (
     <div id="portfolio" className="project">
       <div className="project__box-container">
         <div className="project__box project__box--1">
-          <h1 className="project__status">Projects</h1>
+          <h1 className="project__status">
+            <div>
+              <span className="about__span1">#</span>Some Things I’ve Built
+            </div>
+            <hr className="project__line"></hr>
+          </h1>
         </div>
         <div className="project__box project__box--2">
           <div className="project__card project__card--card1">
-            <div className="project__container">
-              {/* <img
-                  className="project__screen"
-                  src={movieDBScreen}
+            <div className="project__container-description project__container-description--moviedb">
+              <div className="project__presentation project__presentation--moviedb">
+                <div className="project__start project__start--moviedb">
+                  <h6 className="project__featured project__featured--moviedb">
+                    Featured Project
+                  </h6>
+                  <h1 className="project__title project__title--moviedb">
+                    MovieDB
+                  </h1>
+                </div>
+                <div className="project__container-img __container-img--moviedb">
+                  <img src={popcorn} className="project__icon" alt="icon" />
+                </div>
+              </div>
+              <div className="project__container-text project__container-text--moviedb">
+                <p
+                  id="p1"
+                  className="project__description project__description--moviedb"
+                >
+                  MDB is a web app for visualizing personalized MovieDB-API
+                  data. View the top ten rated movies, sort by alphabet, newer
+                  to older, and detailed information about each movie. Check it
+                  out!
+                </p>
+                <ul id="p1" className="project__list project__list--moviedb">
+                  <li className="project__items">React</li>
+                  <li className="project__items">JS</li>
+                  <li className="project__items">SASS</li>
+                  <li className="project__items">HTML</li>
+                  <li className="project__items">MovieDB API</li>
+                </ul>
+              </div>
+              <div className="project__social-icon project__social-icon--moviedb">
+                <a href="https://github.com/" target="_blank" rel="noreferrer">
+                  <img
+                    src={github}
+                    className="project__social-img"
+                    alt="icon"
+                  />
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">
+                  <img src={link} className="project__social-img" alt="icon" />
+                </a>
+              </div>
+            </div>
+            <div className="project__container-screen project__container-screen--moviedb">
+              <a href="https://github.com/" target="_blank" rel="noreferrer">
+                <img
+                  className="project__screen project__screen--moviedb"
+                  src={back}
                   alt="project-screen"
-                /> */}
-              <h2 className="project__title">Movie DB</h2>
-              <button type="button" className="project__button">
-                Link
-              </button>
+                />
+              </a>
             </div>
           </div>
           <div className="project__card project__card--card2">
-            {/* <div className="project__container">
-                <h2 className="project__title">Project</h2>
+            <div className="project__container-description project__container-description--moviedb">
+              <div className="project__presentation project__presentation--moviedb">
+                <div className="project__start project__start--moviedb">
+                  <h6 className="project__featured project__featured--moviedb">
+                    Featured Project
+                  </h6>
+                  <h1 className="project__title project__title--moviedb">
+                    to do list
+                  </h1>
+                </div>
+                <div className="project__container-img __container-img--moviedb">
+                  <img src={form} className="project__icon" alt="icon" />
+                </div>
+              </div>
+              <div className="project__container-text project__container-text--moviedb">
+                <p
+                  id="p1"
+                  className="project__description project__description--moviedb"
+                >
+                  MDB is a web app for visualizing personalized MovieDB-API
+                  data. View the top ten rated movies, sort by alphabet, newer
+                  to older, and detailed information about each movie. Check it
+                  out!
+                </p>
+                <ul id="p1" className="project__list project__list--moviedb">
+                  <li className="project__items">React</li>
+                  <li className="project__items">JS</li>
+                  <li className="project__items">SASS</li>
+                  <li className="project__items">HTML</li>
+                  <li className="project__items">MovieDB API</li>
+                </ul>
+              </div>
+              <div className="project__social-icon project__social-icon--moviedb">
+                <a href="https://github.com/" target="_blank" rel="noreferrer">
+                  <img
+                    src={github}
+                    className="project__social-img"
+                    alt="icon"
+                  />
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">
+                  <img src={link} className="project__social-img" alt="icon" />
+                </a>
+              </div>
+            </div>
+            <div className="project__container-screen project__container-screen--moviedb">
+              <a href="https://github.com/" target="_blank" rel="noreferrer">
                 <img
-                  className="project__screen"
-                  src={travelScreen}
+                  className="project__screen project__screen--moviedb"
+                  src={back}
                   alt="project-screen"
                 />
-                <p className="project__description">
-                  Un texte est une série orale ou écrite de mots perçus comme
-                  constituant un ensemble cohérent, porteur de sens et utilisant
-                  les
-                </p>
-
-                <button type="button" className="project__button">
-                  Link
-                </button>
-              </div> */}
+              </a>
+            </div>
           </div>
           <div className="project__card project__card--card3">
-            {/* <div className="project__container">
-                <h2 className="project__title">Project</h2>
+            <div className="project__container-description project__container-description--moviedb">
+              <div className="project__presentation project__presentation--moviedb">
+                <div className="project__start project__start--moviedb">
+                  <h6 className="project__featured project__featured--moviedb">
+                    Featured Project
+                  </h6>
+                  <h1 className="project__title project__title--moviedb">
+                    Vacation
+                  </h1>
+                </div>
+                <div className="project__container-img __container-img--moviedb">
+                  <img src={adventure} className="project__icon" alt="icon" />
+                </div>
+              </div>
+              <div className="project__container-text project__container-text--moviedb">
+                <p
+                  id="p1"
+                  className="project__description project__description--moviedb"
+                >
+                  MDB is a web app for visualizing personalized MovieDB-API
+                  data. View the top ten rated movies, sort by alphabet, newer
+                  to older, and detailed information about each movie. Check it
+                  out!
+                </p>
+                <ul id="p1" className="project__list project__list--moviedb">
+                  <li className="project__items">React</li>
+                  <li className="project__items">JS</li>
+                  <li className="project__items">SASS</li>
+                  <li className="project__items">HTML</li>
+                  <li className="project__items">MovieDB API</li>
+                </ul>
+              </div>
+              <div className="project__social-icon project__social-icon--moviedb">
+                <a href="https://github.com/" target="_blank" rel="noreferrer">
+                  <img
+                    src={github}
+                    className="project__social-img"
+                    alt="icon"
+                  />
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">
+                  <img src={link} className="project__social-img" alt="icon" />
+                </a>
+              </div>
+            </div>
+            <div className="project__container-screen project__container-screen--moviedb">
+              <a href="https://github.com/" target="_blank" rel="noreferrer">
                 <img
-                  className="project__screen"
-                  src={formFilterList}
+                  className="project__screen project__screen--moviedb"
+                  src={back}
                   alt="project-screen"
                 />
-                <p className="project__description">
-                  Un texte est une série orale ou écrite de mots perçus comme
-                  constituant un ensemble cohérent, porteur de sens et utilisant
-                  les
-                </p>
-
-                <button type="button" className="project__button">
-                  Link
-                </button>
-              </div> */}
-          </div>
-          <div className="project__card project__card--card4">
-            {/* <div className="project__container">
-                <h2 className="project__title">Project</h2>
-                <img
-                  className="project__screen"
-                  src={movieDBScreen}
-                  alt="project-screen"
-                />
-                <p className="project__description">
-                  Un texte est une série orale ou écrite de mots perçus comme
-                  constituant un ensemble cohérent, porteur de sens et utilisant
-                  les
-                </p>
-                <button type="button" className="project__button">
-                  Link
-                </button>
-              </div> */}
+              </a>
+            </div>
           </div>
         </div>
       </div>

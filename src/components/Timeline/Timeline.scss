@@ -1,34 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap");
 
 .timeline {
   z-index: 0;
+  display: flex;
+  justify-content: center;
 
   &__beginner {
     position: relative;
-    max-width: 1450px;
+    max-width: 1350px;
     display: grid;
-    grid-template-columns: repeat(100%, minmax(200px, 1fr));
+    grid-template-columns: repeat(100%, minmax(300px, 1fr));
     grid-template-rows: minmax(200px, auto-fill);
     grid-auto-flow: dense;
     gap: 10px 10px;
 
-    @media screen and (max-width: 1500px) {
-      max-width: 1400px;
+    @media screen and (max-width: 1700px) {
+      max-width: 1250px;
     }
 
-    @media screen and (max-width: 1450px) {
-      max-width: 1300px;
-    }
-
-    @media screen and (max-width: 1350px) {
+    @media screen and (max-width: 1600px) {
       max-width: 1200px;
     }
 
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: 1510px) {
       max-width: 1100px;
     }
-    @media screen and (max-width: 1150px) {
+
+    @media screen and (max-width: 1400px) {
       max-width: 1000px;
+    }
+
+    @media only screen and (max-width: 1300px) {
+      max-width: 900px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      max-width: 800px;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      max-width: 550px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      max-width: 420px;
+    }
+
+    @media only screen and (max-width: 750px) {
+      max-width: 400px;
+    }
+
+    @media only screen and (max-width: 550px) {
+      max-width: 300px;
+      margin-right: 0;
     }
   }
 
@@ -44,7 +68,7 @@
       grid-column: span 2;
       grid-row: span 1;
 
-      @media screen and (max-width: 1091px) {
+      @media screen and (max-width: 1100px) {
         grid-column: unset !important;
         grid-row: unset !important;
       }
@@ -55,7 +79,7 @@
       grid-row: span 1;
       justify-content: flex-start;
 
-      @media screen and (max-width: 1091px) {
+      @media screen and (max-width: 1100px) {
         grid-column: unset !important;
         grid-row: unset !important;
       }
@@ -65,7 +89,7 @@
       grid-column: span 1;
       grid-row: span 1;
 
-      @media screen and (max-width: 1091px) {
+      @media screen and (max-width: 1100px) {
         grid-column: unset !important;
         grid-row: unset !important;
       }
@@ -75,7 +99,7 @@
       grid-column: span 2;
       grid-row: span 1;
 
-      @media screen and (max-width: 1091px) {
+      @media screen and (max-width: 1100px) {
         grid-column: unset !important;
         grid-row: unset !important;
       }
@@ -85,7 +109,7 @@
       grid-column: span 3;
       grid-row: span 1;
 
-      @media screen and (max-width: 1091px) {
+      @media screen and (max-width: 1100px) {
         grid-column: unset !important;
         grid-row: unset !important;
       }
@@ -95,7 +119,7 @@
       grid-column: span 10;
       grid-row: span 1;
 
-      @media screen and (max-width: 1091px) {
+      @media screen and (max-width: 1100px) {
         grid-column: unset !important;
         grid-row: unset !important;
       }
@@ -105,7 +129,11 @@
   &__ref {
     font-family: "Integral";
     font-size: 20px;
-    color: #cea0a0
+    color: #cea0a0;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 15px;
+    }
   }
 
   &__date {
@@ -115,16 +143,16 @@
     width: 100%;
     height: 30px;
     color: #333;
-
+    @media only screen and (max-width: 1750px) {
+      font-size: 16px;
+    }
     @media only screen and (max-width: 1450px) {
       font-size: 15px;
-
     }
 
-    @media screen and (max-width: 1250px) {
-      font-size: 13px;
+    @media screen and (max-width: 1200px) {
+      font-size: 12px;
     }
-   
   }
 
   &__description {
@@ -132,18 +160,34 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 75px;
+    height: 105px;
     font-size: 17px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: white;
+    @media only screen and (max-width: 1750px) {
+      font-size: 15px;
+    }
+    @media screen and (max-width: 1600px) {
+      height: 150px;
+    }
 
     @media only screen and (max-width: 1450px) {
       font-size: 15px;
-
     }
 
     @media screen and (max-width: 1250px) {
       font-size: 13px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      height: 125px;
+    }
+    @media only screen and (max-width: 1100px) {
+      height: 55px;
+    }
+
+    @media only screen and (max-width: 500px) {
+      height: 75px;
     }
   }
 
@@ -151,6 +195,11 @@
     width: 20px;
     height: 20px;
     margin-left: 2px;
+
+    @media only screen and (max-width: 1200px) {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &__first {
@@ -201,8 +250,6 @@
       border-bottom: 1px solid black;
     }
 
-
-
     &--3 {
       justify-content: space-evenly;
       border-bottom: 1px solid black;
@@ -227,5 +274,10 @@
   &__man {
     width: 45px;
     height: 45px;
+
+    @media screen and (max-width: 1200px) {
+      width: 35px;
+      height: 35px;
+    }
   }
 }

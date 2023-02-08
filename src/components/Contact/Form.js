@@ -2,8 +2,17 @@ import React, { useState, useRef, useEffect } from "react";
 import "./Form.scss";
 import FormWrapper from "../../UI/FormWrapper";
 import emailjs from "@emailjs/browser";
-import astroMan from "../../UI/Image/astronaut-white.png";
-
+import Footer from "../../components/Footer/Footer";
+import github2 from "../../UI/Image/git-hub-icon.png";
+import linkedin2 from "../../UI/Image/icons8-linkedin-100.png";
+import flag from "../../UI/Image/france.png";
+import astro from "../../UI/Image/astronaut.png";
+import phone from "../../UI/Image/phone.png";
+import email from "../../UI/Image/message.png";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { ScrollToPlugin } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 const Form = () => {
   const [statusMessage, setStatusMessage] = useState("");
 
@@ -37,34 +46,116 @@ const Form = () => {
       }, 5000);
     }
   }, [statusMessage]);
+  const slideInTop = (elem, delay, duration) => {
+    gsap.fromTo(
+      elem,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+
+        delay: delay || 0.4,
+        duration: duration || 0.6,
+        scrollTrigger: {
+          trigger: elem,
+          start: "top bottom",
+          end: "bottom top",
+        },
+      }
+    );
+  };
+
+  useEffect(() => {
+    slideInTop("#text1", "1", "1.5");
+  }, []);
+  useEffect(() => {
+    slideInTop("#text2", "1.5", "2");
+  }, []);
+  useEffect(() => {
+    slideInTop("#text3", "1", "1.2");
+  }, []);
 
   return (
     <React.Fragment>
       <FormWrapper>
         <div id="contact" className="form">
-          <h1 className="form__title form__title--1">Contact</h1>
-          <p className="form__status">
-            Get In Touch! I’m currently looking for any new opportunities, my
-            inbox is always open. Whether you have a question or just want to
-            say hi, I’ll get back to you!
-          </p>
-          <div className="form__card">
-            <div className="form__container form__container--2">
-              <div class="drops">
-                <div className="form__drop form__drop--1"></div>
-                <div className="form__drop form__drop--2"></div>
-                <div className="form__drop form__drop--3"></div>
-                <div className="form__drop form__drop--4"></div>
+          <div className="form__box-title">
+            <h1 className="form__title">
+              <div>
+                <span className="form__span">#</span>Get In Touch
               </div>
+              <hr className="form__line-title "></hr>
+            </h1>
+          </div>
+          <div className="form__box-element">
+            <div className="form__box-description">
+              <div className="form__circle-box">
+                <div className="form__sphere">
+                  <div className="form__circle form__circle--1"></div>
+                  <div className="form__circle form__circle--2"></div>
+                  <div className="form__circle form__circle--3"></div>
+                </div>
+                <div className="form__globe">
+                  <img className="form__astro" src={astro} alt="social-icon" />
+                </div>
+              </div>
+              <div className="form__container-contact">
+                <p id="text1" className="form__message">
+                  I’m currently looking for new opportunities, my inbox is
+                  always open. Whether you have a question or just want to say
+                  hi, I’ll get back to you!
+                </p>
+                <div className="form__details">
+                  <p className="form__text">
+                    <img className="form__sign" src={phone} alt="social-sign" />
+                    +33698198041
+                  </p>
+                  <p className="form__text">
+                    <img className="form__sign" src={email} alt="social-sign" />
+                    bourgogne.olivier@gmail.com
+                  </p>
+                  <p className="form__text">
+                    <img className="form__flag" src={flag} alt="social-sign" />
+                    Based in Paris
+                  </p>
+                  <div className="form__box-icon">
+                    <a
+                      href="https://github.com/burgundythedev"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        className="form__icon"
+                        src={github2}
+                        alt="social-icon"
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/olivier-bourgogne/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        className="form__icon"
+                        src={linkedin2}
+                        alt="social-icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="text2" className="form__box-container">
               <form
                 ref={form}
                 onSubmit={sendEmail}
-                className="form__form-container"
+                className="form__container "
               >
                 <h1 className="form__sent">{statusMessage}</h1>
                 <div className="form__input-box form__input-box--1">
                   <label className="form__label" for="email">
-                    Your email:
+                    Your email
                   </label>
                   <input
                     required="required"
@@ -76,7 +167,7 @@ const Form = () => {
                 </div>
                 <div className="form__input-box form__input-box--2">
                   <label className="form__label" for="subject">
-                    Subject :
+                    Subject
                   </label>
                   <textarea
                     required="required"
@@ -87,18 +178,11 @@ const Form = () => {
                 </div>
                 <input value="Send" className="form__button" type="submit" />
               </form>
-              <div className="form__container form__container--3">
-                <img
-                  className="form__icon"
-                  src={astroMan}
-                  alt="astronaut-icon"
-                />
-                <h1 className="form__location">Paris, France</h1>
-              </div>
             </div>
           </div>
         </div>
       </FormWrapper>
+      <Footer />
     </React.Fragment>
   );
 };
