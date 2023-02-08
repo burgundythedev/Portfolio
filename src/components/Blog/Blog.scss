@@ -10,15 +10,12 @@
     margin-bottom: 100px;
     text-shadow: 2px 1px 2px grey;
 
-
-
     @media only screen and (max-width: 750px) {
       font-size: 25px;
     }
   }
 
   &__post-container {
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -34,7 +31,6 @@
     position: relative;
     width: 100%;
     margin: auto;
-
   }
 
   &__icon-timeline {
@@ -57,32 +53,12 @@
   &__blog {
     display: flex;
     flex-direction: column;
-    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    width: 300px;
     overflow: hidden;
     box-shadow: 0 0.1rem 1rem rgb(204, 164, 168, 0.2);
     border-radius: 1em;
     background: white;
     padding: 5px;
-
-    @media only screen and (max-width: 1500px) {
-      width: clamp(15rem, calc(15rem + 2vw), 17rem);
-    }
-
-    @media only screen and (max-width: 1250px) {
-      width: clamp(12rem, calc(12rem + 2vw), 14rem);
-    }
-
-    @media only screen and (max-width: 1100px) {
-      width: clamp(10rem, calc(10rem + 2vw), 12rem);
-    }
-
-    @media only screen and (max-width: 900px) {
-      width: clamp(20rem, calc(20rem + 2vw), 22rem);
-    }
-
-    @media only screen and (max-width: 450px) {
-      width: clamp(10rem, calc(10rem + 2vw), 12rem);
-    }
   }
 
   &__body {
@@ -101,7 +77,7 @@
       font-size: 12px;
     }
     @media only screen and (max-width: 450px) {
-     font-size: 10px;
+      font-size: 10px;
     }
   }
 
@@ -123,11 +99,10 @@
     }
     @media only screen and (max-width: 450px) {
       font-size: 10px;
-     }
+    }
 
     &--1 {
       background: rgba(84, 76, 236, 0.3);
-
     }
   }
 
@@ -135,12 +110,10 @@
     display: flex;
     padding: 5px;
     margin-top: 7px;
-
   }
 
   &__user {
     display: flex;
-
   }
 
   &__user-img {
@@ -152,7 +125,6 @@
       width: 50px;
       height: 50px;
     }
-
   }
 
   &__date {
@@ -160,7 +132,7 @@
     font-family: "Orbitron";
     @media only screen and (max-width: 450px) {
       font-size: 10px;
-     }
+    }
   }
 
   &__name {
@@ -168,8 +140,7 @@
     font-family: "Orbitron";
     @media only screen and (max-width: 450px) {
       font-size: 10px;
-     }
-
+    }
   }
 
   &__description {
@@ -181,7 +152,7 @@
     }
     @media only screen and (max-width: 450px) {
       font-size: 15px;
-     }
+    }
   }
 
   &__line {

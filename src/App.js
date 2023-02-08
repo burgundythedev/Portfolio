@@ -7,7 +7,6 @@ import Project from "./components/Project/Project";
 import Form from "./components/Contact/Form";
 import WrapperBack from "./UI/WrapperBack";
 import Blog from "./components/Blog/Blog";
-import ProjectWrapper from "./UI/ProjectWrapper";
 import { Helmet } from "react-helmet";
 
 function App() {
@@ -24,10 +23,9 @@ function App() {
         <Presentation />
       </WrapperBack>
       <About />
-      <ProjectWrapper>
-        <Project />
-        <Blog />
-      </ProjectWrapper>
+      <Project />
+      <Blog />
+
       <Form />
     </div>
   );
