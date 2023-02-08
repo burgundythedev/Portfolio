@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-2023/static/css/main.f2ddabcd.css",
-    "main.js": "/Portfolio-2023/static/js/main.d8c489ca.js",
+    "main.css": "/Portfolio-2023/static/css/main.ff8e24c9.css",
+    "main.js": "/Portfolio-2023/static/js/main.289eae8a.js",
     "static/media/bg2.jpg": "/Portfolio-2023/static/media/bg2.2daabdd8507e5c5de630.jpg",
     "static/media/CV 2023-Olivier Bourgogne-Developpeur Web.pdf": "/Portfolio-2023/static/media/CV 2023-Olivier Bourgogne-Developpeur Web.6cb1f78e81281dabfc04.pdf",
     "static/media/picID.png": "/Portfolio-2023/static/media/picID.9070af0fe624a6f18f2e.png",
@@ -20,11 +20,11 @@
     "static/media/tools.png": "/Portfolio-2023/static/media/tools.48fc9ea04a25f196a5c0.png",
     "static/media/react-logo.png": "/Portfolio-2023/static/media/react-logo.396536ced87da4ba25b4.png",
     "index.html": "/Portfolio-2023/index.html",
-    "main.f2ddabcd.css.map": "/Portfolio-2023/static/css/main.f2ddabcd.css.map",
-    "main.d8c489ca.js.map": "/Portfolio-2023/static/js/main.d8c489ca.js.map"
+    "main.ff8e24c9.css.map": "/Portfolio-2023/static/css/main.ff8e24c9.css.map",
+    "main.289eae8a.js.map": "/Portfolio-2023/static/js/main.289eae8a.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2ddabcd.css",
-    "static/js/main.d8c489ca.js"
+    "static/css/main.ff8e24c9.css",
+    "static/js/main.289eae8a.js"
   ]
 }
