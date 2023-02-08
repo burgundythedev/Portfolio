@@ -29,15 +29,21 @@
     display: flex;
     justify-content: center;
 
-    @media only screen and (max-width: 420px) {
+    @media only screen and (max-width: 620px) {
      width: 250px;
     }
     &--1 {
-      width: 300px;
+      width: 500px;
+      @media only screen and (max-width: 620px) {
+        width: 250px;
+       }
     }
 
     &--2 {
-      width: 300px;
+      width: 500px;
+      @media only screen and (max-width: 620px) {
+        width: 250px;
+       }
     }
 
     &--3 {
