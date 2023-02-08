@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/burgundythedev/Portfolio-2023.git/static/css/main.b0fcbd0c.css",
+    "main.js": "/burgundythedev/Portfolio-2023.git/static/js/main.b400c963.js",
+    "static/media/bg2.jpg": "/burgundythedev/Portfolio-2023.git/static/media/bg2.2daabdd8507e5c5de630.jpg",
+    "static/media/CV 2023-Olivier Bourgogne-Developpeur Web.pdf": "/burgundythedev/Portfolio-2023.git/static/media/CV 2023-Olivier Bourgogne-Developpeur Web.6cb1f78e81281dabfc04.pdf",
+    "static/media/picID.png": "/burgundythedev/Portfolio-2023.git/static/media/picID.9070af0fe624a6f18f2e.png",
+    "static/media/247-2473763_cartoon-cog-wheel-gear-gears-mechanical-motion-cartoon.png": "/burgundythedev/Portfolio-2023.git/static/media/247-2473763_cartoon-cog-wheel-gear-gears-mechanical-motion-cartoon.596fad40c6da5786d44e.png",
+    "static/media/Futura-Bold-font.ttf": "/burgundythedev/Portfolio-2023.git/static/media/Futura-Bold-font.7bfa561462fd51bcc460.ttf",
+    "static/media/Orbitron-VariableFont_wght.ttf": "/burgundythedev/Portfolio-2023.git/static/media/Orbitron-VariableFont_wght.453377cb91a4554c36ce.ttf",
+    "static/media/OB_free-file.png": "/burgundythedev/Portfolio-2023.git/static/media/OB_free-file.6e4786febaca604941e1.png",
+    "static/media/angryimg.png": "/burgundythedev/Portfolio-2023.git/static/media/angryimg.3178e5efe5351cb4ca58.png",
+    "static/media/france.png": "/burgundythedev/Portfolio-2023.git/static/media/france.ae0a4d3049f80dea8d1f.png",
+    "static/media/IntegralCF-Bold.woff": "/burgundythedev/Portfolio-2023.git/static/media/IntegralCF-Bold.1513f4b0beed59bea2c7.woff",
+    "static/media/icons8-linkedin-100.png": "/burgundythedev/Portfolio-2023.git/static/media/icons8-linkedin-100.ba884e1f9ad4362348c1.png",
+    "static/media/phone.png": "/burgundythedev/Portfolio-2023.git/static/media/phone.e4b48fecee1a27aeccdf.png",
+    "static/media/popcorn.png": "/burgundythedev/Portfolio-2023.git/static/media/popcorn.554f6507ead6b8b7fbaf.png",
+    "static/media/message.png": "/burgundythedev/Portfolio-2023.git/static/media/message.792ef22f5eda5fbc5d93.png",
+    "static/media/wordpress-icon.png": "/burgundythedev/Portfolio-2023.git/static/media/wordpress-icon.692cdc7f9ee615b0f9da.png",
+    "static/media/tools.png": "/burgundythedev/Portfolio-2023.git/static/media/tools.48fc9ea04a25f196a5c0.png",
+    "static/media/react-logo.png": "/burgundythedev/Portfolio-2023.git/static/media/react-logo.396536ced87da4ba25b4.png",
+    "index.html": "/burgundythedev/Portfolio-2023.git/index.html",
+    "main.b0fcbd0c.css.map": "/burgundythedev/Portfolio-2023.git/static/css/main.b0fcbd0c.css.map",
+    "main.b400c963.js.map": "/burgundythedev/Portfolio-2023.git/static/js/main.b400c963.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0fcbd0c.css",
+    "static/js/main.b400c963.js"
+  ]
+}
