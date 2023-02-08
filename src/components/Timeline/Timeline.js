@@ -44,22 +44,22 @@ const Timeline = () => {
   };
 
   useEffect(() => {
-    slideInTop("#top1", "0.4", "0.6");
+    slideInTop("#top1", "0.5", "0.6");
   }, []);
   useEffect(() => {
-    slideInTop("#top2", "0.8", "0.8");
+    slideInTop("#top2", "0.6", "0.8");
   }, []);
   useEffect(() => {
-    slideInTop("#top3", "1.2", "1.2");
+    slideInTop("#top3", "0.7", "1.2");
   }, []);
   useEffect(() => {
-    slideInTop("#top4", "1.6", "1.6");
+    slideInTop("#top4", "0.8", "1.6");
   }, []);
   useEffect(() => {
-    slideInTop("#top5", "2", "2");
+    slideInTop("#top5", "0.9", "2");
   }, []);
   useEffect(() => {
-    slideInTop("#top6", "2.4", "2.4");
+    slideInTop("#top6", "1", "2.4");
   }, []);
 
   return (

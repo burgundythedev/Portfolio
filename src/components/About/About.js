@@ -34,13 +34,13 @@ const About = () => {
   };
 
   useEffect(() => {
-    slideInLeft("#start1", "1", "2");
+    slideInLeft("#start1", "0.5", "1");
   }, []);
   useEffect(() => {
-    slideInLeft("#start2", "2", "3");
+    slideInLeft("#start2", "0.5", "1");
   }, []);
   useEffect(() => {
-    slideInLeft("#start3", "2", "3");
+    slideInLeft("#start3", "0.5", "1");
   }, []);
 
   return (

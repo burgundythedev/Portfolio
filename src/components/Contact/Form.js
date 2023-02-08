@@ -66,13 +66,13 @@ const Form = () => {
   };
 
   useEffect(() => {
-    slideInTop("#text1", "1", "1.5");
+    slideInTop("#text1", "0.5", "1.5");
   }, []);
   useEffect(() => {
-    slideInTop("#text2", "1.5", "2");
+    slideInTop("#text2", "0.5", "1.5");
   }, []);
   useEffect(() => {
-    slideInTop("#text3", "1", "1.2");
+    slideInTop("#text3", "0.5", "1.2");
   }, []);
 
   return (
