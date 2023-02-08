@@ -69,10 +69,10 @@ const Form = () => {
     slideInTop("#text1", "0.5", "1.5");
   }, []);
   useEffect(() => {
-    slideInTop("#text2", "0.5", "1.5");
+    slideInTop("#text2", "0.8", "1.8");
   }, []);
   useEffect(() => {
-    slideInTop("#text3", "0.5", "1.2");
+    slideInTop("#text3", "0.7", "1.5");
   }, []);
 
   return (
@@ -144,10 +144,10 @@ const Form = () => {
               </div>
             </div>
           </div>
-          <div id="text2" className="form__box-container">
+          <div className="form__box-container">
             <form ref={form} onSubmit={sendEmail} className="form__container ">
               <h1 className="form__sent">{statusMessage}</h1>
-              <div className="form__input-box form__input-box--1">
+              <div id="text2" className="form__input-box form__input-box--1">
                 <label className="form__label" for="email">
                   Your email
                 </label>
@@ -159,7 +159,7 @@ const Form = () => {
                   placeholder="Email Adress"
                 />
               </div>
-              <div className="form__input-box form__input-box--2">
+              <div id="text2" className="form__input-box form__input-box--2">
                 <label className="form__label" for="subject">
                   Subject
                 </label>

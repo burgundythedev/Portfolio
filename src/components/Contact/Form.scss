@@ -395,6 +395,7 @@ $white: white;
 
   &__container {
     @media only screen and (max-width: 900px) {
+      margin-top: -150px;
       display: flex;
       flex-direction: column;
       align-items: center;
