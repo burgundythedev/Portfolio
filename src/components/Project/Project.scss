@@ -272,7 +272,7 @@
     list-style: none;
     margin: 0px 10px 0px 0px;
     font-family: "Orbitron";
-    font-size: 15px;
+    font-size: 17px;
 
     @media only screen and (max-width: 1320px) {
       font-size: 12px;
@@ -301,6 +301,8 @@
     width: 500px;
     height: 300px;
     border-radius: 5px;
+    -webkit-filter: blur(2px);
+    filter: blur(3px);
 
     @media only screen and (max-width: 1420px) {
       width: 450px;
@@ -322,8 +324,10 @@
     }
 
     &:hover {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
       animation: bounce2 5s ease infinite;
-
+    
       @keyframes bounce2 {
         0%,
         20%,

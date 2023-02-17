@@ -9,6 +9,7 @@ import link from "../../UI/Image/link.png";
 import form from "../../UI/Image/form.png";
 import adventure from "../../UI/Image/adventure.png";
 import back from "../../UI/Image/angryimg.png";
+import woo from "../../UI/Image/woo.png";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 const Project = () => {
   const slideInLeft = (elem, delay, duration) => {
@@ -64,7 +65,7 @@ const Project = () => {
                     Featured Project
                   </h6>
                   <h1 className="project__title project__title--moviedb">
-                    MovieDB
+                    CineClubWOO
                   </h1>
                 </div>
                 <div className="project__container-img __container-img--moviedb">
@@ -76,9 +77,10 @@ const Project = () => {
                   id="p1"
                   className="project__description project__description--moviedb"
                 >
-                  MDB is a web app for visualizing personalized MovieDB-API
-                  data. View the top ten rated movies, sort by alphabet, newer
-                  to older, and detailed information about each movie. Check it
+                  CineClubWOO is a simple design one page web app for
+                  visualizing personalized MovieDB-API data. View the Top Ten
+                  rated movies and a movie list sort by alphabet, newer to
+                  older, and detailed information about each movie. Check it
                   out!
                 </p>
                 <ul id="p1" className="project__list project__list--moviedb">
@@ -90,23 +92,35 @@ const Project = () => {
                 </ul>
               </div>
               <div className="project__social-icon project__social-icon--moviedb">
-                <a href="https://github.com/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://github.com/burgundythedev/MovieDB-App"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src={github}
                     className="project__social-img"
                     alt="icon"
                   />
                 </a>
-                <a href="https://github.com/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://burgundythedev.github.io/MovieDB-App/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={link} className="project__social-img" alt="icon" />
                 </a>
               </div>
             </div>
             <div className="project__container-screen project__container-screen--moviedb">
-              <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <a
+                href="https://burgundythedev.github.io/MovieDB-App/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   className="project__screen project__screen--moviedb"
-                  src={back}
+                  src={woo}
                   alt="project-screen"
                 />
               </a>

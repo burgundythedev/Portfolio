@@ -161,9 +161,9 @@ $white: white;
   }
 
   &__box-icon {
-    width: 100%;
+
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
 
     @media only screen and (max-width: 1400px) {
       display: flex;
