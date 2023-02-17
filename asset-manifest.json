@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/Portfolio-2023/static/css/main.1adf9f07.css",
-    "main.js": "/Portfolio-2023/static/js/main.1213fe13.js",
+    "main.css": "/Portfolio-2023/static/css/main.3ce35343.css",
+    "main.js": "/Portfolio-2023/static/js/main.bb5b8bb3.js",
     "static/media/bg2.jpg": "/Portfolio-2023/static/media/bg2.2daabdd8507e5c5de630.jpg",
+    "static/media/woo.png": "/Portfolio-2023/static/media/woo.146836bcb4e586ff3060.png",
     "static/media/CV 2023-Olivier Bourgogne-Developpeur Web.pdf": "/Portfolio-2023/static/media/CV 2023-Olivier Bourgogne-Developpeur Web.6cb1f78e81281dabfc04.pdf",
     "static/media/picID.png": "/Portfolio-2023/static/media/picID.9070af0fe624a6f18f2e.png",
     "static/media/247-2473763_cartoon-cog-wheel-gear-gears-mechanical-motion-cartoon.png": "/Portfolio-2023/static/media/247-2473763_cartoon-cog-wheel-gear-gears-mechanical-motion-cartoon.596fad40c6da5786d44e.png",
@@ -20,11 +21,11 @@
     "static/media/tools.png": "/Portfolio-2023/static/media/tools.48fc9ea04a25f196a5c0.png",
     "static/media/react-logo.png": "/Portfolio-2023/static/media/react-logo.396536ced87da4ba25b4.png",
     "index.html": "/Portfolio-2023/index.html",
-    "main.1adf9f07.css.map": "/Portfolio-2023/static/css/main.1adf9f07.css.map",
-    "main.1213fe13.js.map": "/Portfolio-2023/static/js/main.1213fe13.js.map"
+    "main.3ce35343.css.map": "/Portfolio-2023/static/css/main.3ce35343.css.map",
+    "main.bb5b8bb3.js.map": "/Portfolio-2023/static/js/main.bb5b8bb3.js.map"
   },
   "entrypoints": [
-    "static/css/main.1adf9f07.css",
-    "static/js/main.1213fe13.js"
+    "static/css/main.3ce35343.css",
+    "static/js/main.bb5b8bb3.js"
   ]
 }
