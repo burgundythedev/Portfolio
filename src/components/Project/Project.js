@@ -160,20 +160,32 @@ const Project = () => {
                 </ul>
               </div>
               <div className="project__social-icon project__social-icon--moviedb">
-                <a href="https://github.com/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://burgundythedev.github.io/todolist/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src={github}
                     className="project__social-img"
                     alt="icon"
                   />
                 </a>
-                <a href="https://github.com/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://github.com/burgundythedev/todolist"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={link} className="project__social-img" alt="icon" />
                 </a>
               </div>
             </div>
             <div className="project__container-screen project__container-screen--moviedb">
-              <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <a
+                href="https://burgundythedev.github.io/todolist/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   className="project__screen project__screen--moviedb"
                   src={back}
