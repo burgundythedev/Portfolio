@@ -10,6 +10,7 @@ import form from "../../UI/Image/form.png";
 import adventure from "../../UI/Image/adventure.png";
 import back from "../../UI/Image/angryimg.png";
 import woo from "../../UI/Image/woo.png";
+import todo from "../../UI/Image/todolist-vert.png";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 const Project = () => {
   const slideInLeft = (elem, delay, duration) => {
@@ -85,9 +86,9 @@ const Project = () => {
                 </p>
                 <ul id="p1" className="project__list project__list--moviedb">
                   <li className="project__items">React</li>
-                  <li className="project__items">JS</li>
+                  <li className="project__items">JSX</li>
                   <li className="project__items">SASS</li>
-                  <li className="project__items">HTML</li>
+                  <li className="project__items">Responsive</li>
                   <li className="project__items">MovieDB API</li>
                 </ul>
               </div>
@@ -146,22 +147,20 @@ const Project = () => {
                   id="p1"
                   className="project__description project__description--moviedb"
                 >
-                  MDB is a web app for visualizing personalized MovieDB-API
-                  data. View the top ten rated movies, sort by alphabet, newer
-                  to older, and detailed information about each movie. Check it
-                  out!
+                  Organize your life and work with this TodoList app, you can
+                  add, edit and delete tasks.
                 </p>
                 <ul id="p1" className="project__list project__list--moviedb">
                   <li className="project__items">React</li>
-                  <li className="project__items">JS</li>
-                  <li className="project__items">SASS</li>
-                  <li className="project__items">HTML</li>
-                  <li className="project__items">MovieDB API</li>
+                  <li className="project__items">JSX</li>
+                  <li className="project__items">CSS</li>
+                  <li className="project__items">Responsive</li>
+                  <li className="project__items">React Hooks</li>
                 </ul>
               </div>
               <div className="project__social-icon project__social-icon--moviedb">
                 <a
-                  href="https://burgundythedev.github.io/todolist/"
+                  href="https://github.com/burgundythedev/todolist"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -172,7 +171,7 @@ const Project = () => {
                   />
                 </a>
                 <a
-                  href="https://github.com/burgundythedev/todolist"
+                  href="https://burgundythedev.github.io/todolist/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -188,7 +187,7 @@ const Project = () => {
               >
                 <img
                   className="project__screen project__screen--moviedb"
-                  src={back}
+                  src={todo}
                   alt="project-screen"
                 />
               </a>
