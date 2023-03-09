@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/Portfolio-2023/static/css/main.f3ac32c4.css",
-    "main.js": "/Portfolio-2023/static/js/main.ddf1ba56.js",
+    "main.css": "/Portfolio-2023/static/css/main.2486ae5a.css",
+    "main.js": "/Portfolio-2023/static/js/main.f86c5079.js",
     "static/media/bg2.jpg": "/Portfolio-2023/static/media/bg2.2daabdd8507e5c5de630.jpg",
     "static/media/woo.png": "/Portfolio-2023/static/media/woo.146836bcb4e586ff3060.png",
+    "static/media/shop.jpeg": "/Portfolio-2023/static/media/shop.67115fe068c7eba812c6.jpeg",
     "static/media/CV 2023-Olivier Bourgogne-Developpeur Web.pdf": "/Portfolio-2023/static/media/CV 2023-Olivier Bourgogne-Developpeur Web.6cb1f78e81281dabfc04.pdf",
     "static/media/picID.png": "/Portfolio-2023/static/media/picID.9070af0fe624a6f18f2e.png",
     "static/media/todolist-vert.png": "/Portfolio-2023/static/media/todolist-vert.6da952b4910891613b9c.png",
@@ -11,7 +12,6 @@
     "static/media/Futura-Bold-font.ttf": "/Portfolio-2023/static/media/Futura-Bold-font.7bfa561462fd51bcc460.ttf",
     "static/media/Orbitron-VariableFont_wght.ttf": "/Portfolio-2023/static/media/Orbitron-VariableFont_wght.453377cb91a4554c36ce.ttf",
     "static/media/OB_free-file.png": "/Portfolio-2023/static/media/OB_free-file.6e4786febaca604941e1.png",
-    "static/media/angryimg.png": "/Portfolio-2023/static/media/angryimg.3178e5efe5351cb4ca58.png",
     "static/media/france.png": "/Portfolio-2023/static/media/france.ae0a4d3049f80dea8d1f.png",
     "static/media/IntegralCF-Bold.woff": "/Portfolio-2023/static/media/IntegralCF-Bold.1513f4b0beed59bea2c7.woff",
     "static/media/icons8-linkedin-100.png": "/Portfolio-2023/static/media/icons8-linkedin-100.ba884e1f9ad4362348c1.png",
@@ -22,11 +22,11 @@
     "static/media/tools.png": "/Portfolio-2023/static/media/tools.48fc9ea04a25f196a5c0.png",
     "static/media/react-logo.png": "/Portfolio-2023/static/media/react-logo.396536ced87da4ba25b4.png",
     "index.html": "/Portfolio-2023/index.html",
-    "main.f3ac32c4.css.map": "/Portfolio-2023/static/css/main.f3ac32c4.css.map",
-    "main.ddf1ba56.js.map": "/Portfolio-2023/static/js/main.ddf1ba56.js.map"
+    "main.2486ae5a.css.map": "/Portfolio-2023/static/css/main.2486ae5a.css.map",
+    "main.f86c5079.js.map": "/Portfolio-2023/static/js/main.f86c5079.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3ac32c4.css",
-    "static/js/main.ddf1ba56.js"
+    "static/css/main.2486ae5a.css",
+    "static/js/main.f86c5079.js"
   ]
 }
