@@ -8,7 +8,7 @@ import github from "../../UI/Image/github-form.png";
 import link from "../../UI/Image/link.png";
 import form from "../../UI/Image/form.png";
 import adventure from "../../UI/Image/adventure.png";
-import back from "../../UI/Image/angryimg.png";
+import shop from "../../UI/Image/shop.jpeg";
 import woo from "../../UI/Image/woo.png";
 import todo from "../../UI/Image/todolist-vert.png";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
@@ -201,7 +201,7 @@ const Project = () => {
                     Featured Project
                   </h6>
                   <h1 className="project__title project__title--moviedb">
-                    Vacation
+                    FooClothing
                   </h1>
                 </div>
                 <div className="project__container-img __container-img--moviedb">
@@ -213,37 +213,47 @@ const Project = () => {
                   id="p1"
                   className="project__description project__description--moviedb"
                 >
-                  MDB is a web app for visualizing personalized MovieDB-API
-                  data. View the top ten rated movies, sort by alphabet, newer
-                  to older, and detailed information about each movie. Check it
-                  out!
+                  FooClothing App is a showcase website. You can visualize what
+                  FooClothing is about and sell.
                 </p>
                 <ul id="p1" className="project__list project__list--moviedb">
                   <li className="project__items">React</li>
-                  <li className="project__items">JS</li>
+                  <li className="project__items">React Router v6</li>
                   <li className="project__items">SASS</li>
-                  <li className="project__items">HTML</li>
-                  <li className="project__items">MovieDB API</li>
+                  <li className="project__items">Responsive</li>
+                  <li className="project__items">PostsAPI</li>
                 </ul>
               </div>
               <div className="project__social-icon project__social-icon--moviedb">
-                <a href="https://github.com/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://github.com/burgundythedev/e-commerce"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src={github}
                     className="project__social-img"
                     alt="icon"
                   />
                 </a>
-                <a href="https://github.com/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://burgundythedev.github.io/e-commerce/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={link} className="project__social-img" alt="icon" />
                 </a>
               </div>
             </div>
             <div className="project__container-screen project__container-screen--moviedb">
-              <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <a
+                href="https://burgundythedev.github.io/e-commerce/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   className="project__screen project__screen--moviedb"
-                  src={back}
+                  src={shop}
                   alt="project-screen"
                 />
               </a>

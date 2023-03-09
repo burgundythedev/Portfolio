@@ -55,7 +55,7 @@
     flex-direction: column;
     width: 300px;
     overflow: hidden;
-    box-shadow: 0 0.1rem 1rem rgb(204, 164, 168, 0.2);
+    box-shadow: 0 0.1rem 1rem rgb(204, 164, 168, 0.4);
     border-radius: 1em;
     background: white;
     padding: 5px;
@@ -72,13 +72,12 @@
     font-size: 15px;
     margin: 0;
     font-family: "Integral";
+    letter-spacing: 1px;
 
     @media only screen and (max-width: 1100px) {
       font-size: 12px;
     }
-    @media only screen and (max-width: 450px) {
-      font-size: 10px;
-    }
+
   }
 
   &__img {
@@ -98,7 +97,7 @@
       font-size: 0.8rem;
     }
     @media only screen and (max-width: 450px) {
-      font-size: 10px;
+      font-size: 15px;
     }
 
     &--1 {
@@ -139,20 +138,19 @@
     margin-bottom: 0;
     font-family: "Orbitron";
     @media only screen and (max-width: 450px) {
-      font-size: 10px;
+      font-size: 15px;
     }
   }
 
   &__description {
+    font-size: 20px;
     font-family: "Montserrat", sans-serif;
     height: 50px;
 
     @media only screen and (max-width: 900px) {
       height: auto;
     }
-    @media only screen and (max-width: 450px) {
-      font-size: 15px;
-    }
+ 
   }
 
   &__line {
