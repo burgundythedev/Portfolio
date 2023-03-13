@@ -73,8 +73,8 @@ const Timeline = () => {
           <div className="timeline__first timeline__first--fcc">
             <h1 className="timeline__date">FreeCodeCamp </h1>
             <p className="timeline__description">
-              FreeCodeCamp was the gateway to my first steps into Coding. I've
-              completed all the courses of HTML, CSS & JS.
+              "FreeCodeCamp was my gateway to my first steps into coding. I
+              completed all of the HTML, CSS, and JS courses."
             </p>
             <img src={htmlLogo} alt="logo" className="timeline__logo" />
             <img src={cssLogo} alt="logo" className="timeline__logo" />
@@ -89,8 +89,8 @@ const Timeline = () => {
           <div className="timeline__first timeline__first--it">
             <h1 className="timeline__date">Training Web Dev </h1>
             <p className="timeline__description">
-              I've worked on different technologies like PhP, JS, HTML, CSS,
-              MySQL, Laravel, WordPress, GitHub & more
+              "I have experience working with a variety of technologies,
+              including PHP, JS, HTML/CSS, MySQL, Laravel, GitHub, and more."
             </p>
             <img src={phpLogo} alt="logo" className="timeline__logo" />
             <img src={laraLogo} alt="logo" className="timeline__logo" />
@@ -110,8 +110,8 @@ const Timeline = () => {
           <div className="timeline__first timeline__first--intern">
             <h1 className="timeline__date">Internship</h1>
             <p className="timeline__description">
-              4 months internship, I've learned and created projects with
-              React.js.
+              "During my 4-month internship, I gained experience and developed
+              projects using React.js."
             </p>
             <img src={reactLogo} alt="logo" className="timeline__logo" />
           </div>
@@ -124,8 +124,8 @@ const Timeline = () => {
           <div className="timeline__first timeline__first--i">
             <h1 className="timeline__date">Graduated (Bac+2)</h1>
             <p className="timeline__description">
-              Oral presentation of personnal Projects developed during my
-              internship and school training
+              "I delivered an oral presentation showcasing the personal projects
+              I developed throughout my internship and academic training."
             </p>
             <img
               src={reactLogo}
@@ -142,8 +142,8 @@ const Timeline = () => {
           <div className="timeline__first timeline__first--j">
             <h1 className="timeline__date">Udemy (Self Taught)</h1>
             <p className="timeline__description">
-              I dived deeper into React.js! I learned about Hooks, React
-              Routing, Animations, HTTP Request, API, BEM, SASS & more
+              "I delved deeper into React.js, learning about Hooks, React
+              Routing, Animations, HTTP Requests, APIs, BEM, SASS, and more."
             </p>
             <img src={reactLogo} alt="logo" className="timeline__logo" />
           </div>
@@ -159,8 +159,8 @@ const Timeline = () => {
               Ready to show the world my skills
             </h1>
             <p className="timeline__description timeline__description--k">
-              Keep Learning new Coding Concepts - Creation of Personal Projects
-              with React.JS, BEM, SASS, API, GitHub & more
+              "I am creating personal projects using ReactJS, BEM, SASS, API,
+              GitHub, and other coding concepts while continuously learning"
             </p>
             <img src={reactLogo} alt="logo" className="timeline__logo" />
           </div>

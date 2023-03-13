@@ -79,7 +79,6 @@ const About = () => {
             </p>
           </div>
         </div>
-
         <div className="about__img-res">
           <img src={parkourMan} alt="img-theme" className="about__img" />
         </div>

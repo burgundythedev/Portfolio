@@ -19,8 +19,7 @@ const Presentation = () => {
       {
         x: 0,
         opacity: 1,
-        stagger: 0.5,
-        delay: 1.5,
+        stagger: 0.3,
       }
     );
   };
@@ -49,9 +48,10 @@ const Presentation = () => {
             <img className="presentation__img" src={picID} alt="id-pic" />
             <div className="presentation__box-experience">
               <p className="presentation__description">
-                "15 years of Soft Skills in work environnements and life, I want
-                to apply my Web Developer skills to business and build beautiful
-                UI experiences with attention to details and performances."
+                "After 15 years of developing my soft skills in various work
+                environments, I am eager to apply my web development skills to
+                the business world and create beautiful UI experiences that pay
+                attention to details and performance."
               </p>
             </div>
           </div>

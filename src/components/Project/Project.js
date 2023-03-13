@@ -147,8 +147,8 @@ const Project = () => {
                   id="p1"
                   className="project__description project__description--moviedb"
                 >
-                  Organize your life and work with this TodoList app, you can
-                  add, edit and delete tasks.
+                  With this TodoList app, you can efficiently organize your life
+                  and work by easily adding, editing, and deleting tasks.
                 </p>
                 <ul id="p1" className="project__list project__list--moviedb">
                   <li className="project__items">React</li>
@@ -213,8 +213,9 @@ const Project = () => {
                   id="p1"
                   className="project__description project__description--moviedb"
                 >
-                  FooClothing App is a showcase website. You can visualize what
-                  FooClothing is about and sell.
+                  The FooClothing App serves as both a showcase and a platform
+                  for selling, allowing you to visualize what FooClothing is all
+                  about.
                 </p>
                 <ul id="p1" className="project__list project__list--moviedb">
                   <li className="project__items">React</li>
