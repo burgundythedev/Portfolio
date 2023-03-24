@@ -110,7 +110,7 @@ const Timeline = () => {
           <div className="timeline__first timeline__first--intern">
             <h1 className="timeline__date">Internship</h1>
             <p className="timeline__description">
-              "During my 4-month internship, I gained experience and developed
+              "During my 6 months internship, I gained experience and developed
               projects using React.js."
             </p>
             <img src={reactLogo} alt="logo" className="timeline__logo" />
