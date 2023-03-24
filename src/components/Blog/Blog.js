@@ -58,8 +58,8 @@ const Blog = () => {
               <h4 className="blog__new">What's new in 2023</h4>
               <span className="blog__tag blog__tag--1">Technology</span>
               <p className="blog__description">
-                I keep learning and created new Projects that I will post
-                update. Stay tuned!
+                I keep learning and created new Projects that I will update.
+                Stay tuned!
               </p>
             </div>
             <div className="blog__footer">
