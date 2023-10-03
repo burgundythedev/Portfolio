@@ -3,14 +3,10 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { ScrollToPlugin } from "gsap/all";
-import popcorn from "../../UI/Image/popcorn.png";
 import github from "../../UI/Image/github-form.png";
 import link from "../../UI/Image/link.png";
-import form from "../../UI/Image/form.png";
-import adventure from "../../UI/Image/adventure.png";
-import shop from "../../UI/Image/shop.jpeg";
-import woo from "../../UI/Image/woo.png";
-import todo from "../../UI/Image/todolist-vert.png";
+import villabulle from "../../UI/Image/screen-website-villa.png";
+
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 const Project = () => {
   const slideInLeft = (elem, delay, duration) => {
@@ -58,206 +54,84 @@ const Project = () => {
           </h1>
         </div>
         <div className="project__box project__box--2">
-          <div className="project__card project__card--card1">
-            <div className="project__container-description project__container-description--moviedb">
-              <div className="project__presentation project__presentation--moviedb">
-                <div className="project__start project__start--moviedb">
-                  <h6 className="project__featured project__featured--moviedb">
+          <div className="project__card">
+            <div className="project__container-description project__container-description">
+              <div className="project__presentation project__presentation">
+                <div className="project__start project__start">
+                  <h6 className="project__featured project__featured">
                     Featured Project
-                  </h6>
-                  <h1 className="project__title project__title--moviedb">
-                    CineClubWOO
-                  </h1>
-                </div>
-                <div className="project__container-img __container-img--moviedb">
-                  <img src={popcorn} className="project__icon" alt="icon" />
+                  </h6>{" "}
+                  <div className="project__social-icon project__social-icon">
+                    <h1 className="project__title project__title">
+                      E-SHOP WEBSITE: Villa Bulle
+                    </h1>
+
+                    <a
+                      href="https://github.com/burgundythedev/evisit-villabulle"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={github}
+                        className="project__social-img"
+                        alt="icon"
+                      />
+                    </a>
+                    <a
+                      href="https://burgundythedev.github.io/evisit-villabulle/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        src={link}
+                        className="project__social-img"
+                        alt="icon"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div className="project__container-text project__container-text--moviedb">
+              <div className="project__container-text">
                 <p
                   id="p1"
-                  className="project__description project__description--moviedb"
+                  className="project__description project__description"
                 >
-                  CineClubWOO is a simple design one page web app for
-                  visualizing personalized MovieDB-API data. View the Top Ten
-                  rated movies and a movie list sort by alphabet, newer to
-                  older, and detailed information about each movie. Check it
-                  out!
+                  <p>
+                    The <b>Villabulle E-Commerce</b> is an <b>React-based</b>{" "}
+                    web application, designed with{" "}
+                    <b>
+                      Redux, SASS/BEM, Media Queries, Firebase, NPM packages and
+                      custom hooks.
+                    </b>{" "}
+                    This dynamic platform provides an immersive e-commerce
+                    experience for both users and administrators. Users can
+                    effortlessly create accounts, log in securely, reset
+                    passwords, and make purchases. Additionally, users can
+                    access their order history, while administrators have full
+                    control to manage products, display them for users, and
+                    analyze order data through a bar chart component. The utmost
+                    attention has been paid to{" "}
+                    <b>security through environment variables</b>. The website
+                    has been meticulously optimized to prevent users from
+                    getting lost, even in the event of errors occurring during
+                    their user experience. This prioritizes a smooth and
+                    intuitive journey for users at all times.{" "}
+                    <b>Check my website by clicking 👉</b>
+                  </p>
                 </p>
-                <ul id="p1" className="project__list project__list--moviedb">
-                  <li className="project__items">React</li>
-                  <li className="project__items">JSX</li>
-                  <li className="project__items">SASS</li>
-                  <li className="project__items">Responsive</li>
-                  <li className="project__items">MovieDB API</li>
-                </ul>
-              </div>
-              <div className="project__social-icon project__social-icon--moviedb">
+
                 <a
-                  href="https://github.com/burgundythedev/MovieDB-App"
+                  href="https://burgundythedev.github.io/evisit-villabulle/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img
-                    src={github}
-                    className="project__social-img"
-                    alt="icon"
+                    className="project__screen project__screen"
+                    src={villabulle}
+                    alt="project-screen"
                   />
                 </a>
-                <a
-                  href="https://burgundythedev.github.io/MovieDB-App/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={link} className="project__social-img" alt="icon" />
-                </a>
               </div>
-            </div>
-            <div className="project__container-screen project__container-screen--moviedb">
-              <a
-                href="https://burgundythedev.github.io/MovieDB-App/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  className="project__screen project__screen--moviedb"
-                  src={woo}
-                  alt="project-screen"
-                />
-              </a>
-            </div>
-          </div>
-          <div className="project__card project__card--card2">
-            <div className="project__container-description project__container-description--moviedb">
-              <div className="project__presentation project__presentation--moviedb">
-                <div className="project__start project__start--moviedb">
-                  <h6 className="project__featured project__featured--moviedb">
-                    Featured Project
-                  </h6>
-                  <h1 className="project__title project__title--moviedb">
-                    to do list
-                  </h1>
-                </div>
-                <div className="project__container-img __container-img--moviedb">
-                  <img src={form} className="project__icon" alt="icon" />
-                </div>
-              </div>
-              <div className="project__container-text project__container-text--moviedb">
-                <p
-                  id="p1"
-                  className="project__description project__description--moviedb"
-                >
-                  With this TodoList app, you can efficiently organize your life
-                  and work by easily adding, editing, and deleting tasks.
-                </p>
-                <ul id="p1" className="project__list project__list--moviedb">
-                  <li className="project__items">React</li>
-                  <li className="project__items">JSX</li>
-                  <li className="project__items">CSS</li>
-                  <li className="project__items">Responsive</li>
-                  <li className="project__items">React Hooks</li>
-                </ul>
-              </div>
-              <div className="project__social-icon project__social-icon--moviedb">
-                <a
-                  href="https://github.com/burgundythedev/todolist"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src={github}
-                    className="project__social-img"
-                    alt="icon"
-                  />
-                </a>
-                <a
-                  href="https://burgundythedev.github.io/todolist/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={link} className="project__social-img" alt="icon" />
-                </a>
-              </div>
-            </div>
-            <div className="project__container-screen project__container-screen--moviedb">
-              <a
-                href="https://burgundythedev.github.io/todolist/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  className="project__screen project__screen--moviedb"
-                  src={todo}
-                  alt="project-screen"
-                />
-              </a>
-            </div>
-          </div>
-          <div className="project__card project__card--card3">
-            <div className="project__container-description project__container-description--moviedb">
-              <div className="project__presentation project__presentation--moviedb">
-                <div className="project__start project__start--moviedb">
-                  <h6 className="project__featured project__featured--moviedb">
-                    Featured Project
-                  </h6>
-                  <h1 className="project__title project__title--moviedb">
-                    FooClothing
-                  </h1>
-                </div>
-                <div className="project__container-img __container-img--moviedb">
-                  <img src={adventure} className="project__icon" alt="icon" />
-                </div>
-              </div>
-              <div className="project__container-text project__container-text--moviedb">
-                <p
-                  id="p1"
-                  className="project__description project__description--moviedb"
-                >
-                  The FooClothing App serves as both a showcase and a platform
-                  for selling, allowing you to visualize what FooClothing is all
-                  about.
-                </p>
-                <ul id="p1" className="project__list project__list--moviedb">
-                  <li className="project__items">React</li>
-                  <li className="project__items">React Router v6</li>
-                  <li className="project__items">SASS</li>
-                  <li className="project__items">Responsive</li>
-                  <li className="project__items">PostsAPI</li>
-                </ul>
-              </div>
-              <div className="project__social-icon project__social-icon--moviedb">
-                <a
-                  href="https://github.com/burgundythedev/e-commerce"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src={github}
-                    className="project__social-img"
-                    alt="icon"
-                  />
-                </a>
-                <a
-                  href="https://burgundythedev.github.io/e-commerce/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={link} className="project__social-img" alt="icon" />
-                </a>
-              </div>
-            </div>
-            <div className="project__container-screen project__container-screen--moviedb">
-              <a
-                href="https://burgundythedev.github.io/e-commerce/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  className="project__screen project__screen--moviedb"
-                  src={shop}
-                  alt="project-screen"
-                />
-              </a>
             </div>
           </div>
         </div>

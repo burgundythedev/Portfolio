@@ -8,8 +8,7 @@ import parkourMan from "../../UI/Image/247-2473763_cartoon-cog-wheel-gear-gears-
 import github from "../../UI/Image/icons8-github-128.png";
 import linkedin from "../../UI/Image/icons8-linkedin-100.png";
 import stair2 from "../../UI/Image/escalier2.png";
-import resume from "../../UI/Image/CV 2023-Olivier Bourgogne-Developpeur Web.pdf";
-
+import resume from "../../UI/Image/OB - 2023 - CV Développeur Front End.pdf";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 const About = () => {
   const slideInLeft = (elem, delay, duration) => {
@@ -93,8 +92,10 @@ const About = () => {
                 id="start2"
                 className="about__description about__description--skills"
               >
-                ["HTML", "CSS", "SASS", "BEM", "JavaScript", "React", "Media
-                Queries", "GitHub", "Croissant", "Cake"]
+                <b>
+                  [ "TypeScript", "React", "Redux", "NPM", "Jest", "Firebase",
+                  "HTML", "SASS", "BEM", "JavaScript", "Media Queries", "Git" ]
+                </b>
               </p>
             </div>
             <div className="about__education">

@@ -38,9 +38,10 @@ const Blog = () => {
           <div className="blog__blog blog__blog--2">
             <div className="blog__body">
               <h4 className="blog__new">What's new in 2023</h4>
-              <span className="blog__tag blog__tag--1">Work in progress</span>
+              <span className="blog__tag blog__tag--1">Work</span>
               <p className="blog__description">
-                I'm adding a Watchlist to my MovieDb Project
+                My e-shop "Villa Bulle" is available on my portofolio section.
+                Check it out!
               </p>
             </div>
             <div className="blog__footer">
@@ -58,8 +59,7 @@ const Blog = () => {
               <h4 className="blog__new">What's new in 2023</h4>
               <span className="blog__tag blog__tag--1">Technology</span>
               <p className="blog__description">
-                I keep learning and created new Projects that I will update.
-                Stay tuned!
+                I'm mastering TypeScript and Jest. <br></br>Stay tuned!
               </p>
             </div>
             <div className="blog__footer">
