@@ -56,8 +56,8 @@ const Project = () => {
         <div className="project__box project__box--2">
           <div className="project__card">
             <div className="project__container-description project__container-description">
-              <div className="project__presentation project__presentation">
-                <div className="project__start project__start">
+              <div className="project__container">
+                <div className="project__presentation project__presentation">
                   <h6 className="project__featured project__featured">
                     Featured Project
                   </h6>{" "}
@@ -65,7 +65,6 @@ const Project = () => {
                     <h1 className="project__title project__title">
                       E-SHOP WEBSITE: Villa Bulle
                     </h1>
-
                     <a
                       href="https://github.com/burgundythedev/evisit-villabulle"
                       target="_blank"
@@ -90,47 +89,48 @@ const Project = () => {
                     </a>
                   </div>
                 </div>
-              </div>
-              <div className="project__container-text">
-                <p
-                  id="p1"
-                  className="project__description project__description"
-                >
-                  <p>
-                    The <b>Villabulle E-Commerce</b> is an <b>React-based</b>{" "}
-                    web application, designed with{" "}
-                    <b>
-                      Redux, SASS/BEM, Media Queries, Firebase, NPM packages and
-                      custom hooks.
-                    </b>{" "}
-                    This dynamic platform provides an immersive e-commerce
-                    experience for both users and administrators. Users can
-                    effortlessly create accounts, log in securely, reset
-                    passwords, and make purchases. Additionally, users can
-                    access their order history, while administrators have full
-                    control to manage products, display them for users, and
-                    analyze order data through a bar chart component. The utmost
-                    attention has been paid to{" "}
-                    <b>security through environment variables</b>. The website
-                    has been meticulously optimized to prevent users from
-                    getting lost, even in the event of errors occurring during
-                    their user experience. This prioritizes a smooth and
-                    intuitive journey for users at all times.{" "}
-                    <b>Check my website by clicking 👉</b>
+                <div className="project__container-screendesc">
+                  <p
+                    id="p1"
+                    className="project__description project__description"
+                  >
+                    <p>
+                      The <b>Villabulle E-Commerce</b> is an <b>React-based</b>{" "}
+                      web application, designed with{" "}
+                      <b>
+                        Redux, SASS/BEM, Media Queries, Firebase, NPM packages
+                        and custom hooks.
+                      </b>{" "}
+                      This dynamic platform provides an immersive e-commerce
+                      experience for both users and administrators. Users can
+                      effortlessly create accounts, log in securely, reset
+                      passwords, and make purchases. Additionally, users can
+                      access their order history, while administrators have full
+                      control to manage products, display them for users, and
+                      analyze order data through a bar chart component. The
+                      utmost attention has been paid to{" "}
+                      <b>security through environment variables</b>. The website
+                      has been meticulously optimized to prevent users from
+                      getting lost, even in the event of errors occurring during
+                      their user experience. This prioritizes a smooth and
+                      intuitive journey for users at all times.{" "}
+                      <b>Check my website by clicking 👉</b>
+                    </p>
                   </p>
-                </p>
 
-                <a
-                  href="https://burgundythedev.github.io/evisit-villabulle/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    className="project__screen project__screen"
-                    src={villabulle}
-                    alt="project-screen"
-                  />
-                </a>
+                  <a
+                    href="https://burgundythedev.github.io/evisit-villabulle/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project__link-screen"
+                  >
+                    <img
+                      className="project__screen project__screen"
+                      src={villabulle}
+                      alt="project-screen"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
