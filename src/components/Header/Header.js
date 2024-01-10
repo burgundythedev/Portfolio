@@ -1,13 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { ScrollToPlugin } from "gsap/all";
-import { Link } from "react-scroll";
 import "./Header.scss";
-import homeLogo from "../../UI/Image/home.png";
-import logo from "../../UI/Image/OB_free-file.png";
+import location from "../../UI/Image/location.png";
+import gmail from "../../UI/Image/gmail.png";
+import linkedin from "../../UI/Image/linkedin.png";
+import github from "../../UI/Image/github.png";
+import logo from "../../UI/Image/OB-logo.png";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 const Header = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [screenWidth]);
+
   const slideInBottom = (elem, delay, duration) => {
     gsap.fromTo(
       elem,
@@ -60,55 +74,66 @@ const Header = () => {
     slideOpacity("#menu", "0.5", "5");
   }, []);
   return (
-    <div id="home" className="header">
-      <div className="header__box-logo"></div>
-      <div className="header__left-line">
-        <div className="header__box-logo">
-          <img id="menu" className="header__logo" src={logo} alt="logo-ob" />
-          <div id="line1" className="header__line2"></div>
+    <div className="header">
+      <div className="header__img-container">
+        <img className="header__img" src={logo} alt="id-pic" />
+      </div>
+      <ul id="menu" className="header__list">
+        {screenWidth >= 480 && (
+          <div
+            className="header__details"
+            href="contact"
+            spy={true}
+            smooth={true}
+            duration={1500}
+          >
+            <img
+              id="menu"
+              className="header__logo"
+              src={location}
+              alt="logo-ob"
+            />
+            <p className="header__text">France</p>
+          </div>
+        )}
+        <div
+          className="header__details"
+          href="home"
+          spy={true}
+          smooth={true}
+          duration={1500}
+        >
+          <img id="menu" className="header__logo" src={gmail} alt="logo-ob" />
+          <p className="header__text">bourgogne.olivier@gmail.com</p>
         </div>
-      </div>
-      <div className="header__wrapper-menu">
-        <ul id="menu" className="header__list">
-          <Link
-            className="header__link"
-            to="home"
-            spy={true}
-            smooth={true}
-            duration={1500}
-          >
-            <img src={homeLogo} className="header__icon" alt="home-logo" />
-          </Link>
-          <Link
-            className="header__link"
-            to="about"
-            spy={true}
-            smooth={true}
-            duration={1500}
-          >
-            About
-          </Link>
-          <Link
-            className="header__link"
-            to="portfolio"
-            spy={true}
-            smooth={true}
-            duration={1500}
-          >
-            Portfolio
-          </Link>
-          <Link
-            className="header__link"
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={1500}
-          >
-            Contact
-          </Link>
-          <div id="line2" className="header__line"></div>
-        </ul>
-      </div>
+        <a
+          className="header__link"
+          href="https://www.linkedin.com/in/olivier-bourgogne/"
+          target="_blank"
+          spy={true}
+          smooth={true}
+          duration={1500}
+          rel="noreferrer"
+        >
+          <img
+            id="menu"
+            className="header__logo"
+            src={linkedin}
+            alt="logo-ob"
+          />
+        </a>
+        <a
+          className="header__link"
+          href="https://github.com/burgundythedev"
+          target="_blank"
+          spy={true}
+          smooth={true}
+          duration={1500}
+          rel="noreferrer"
+        >
+          <img id="menu" className="header__logo" src={github} alt="logo-ob" />
+        </a>
+      </ul>
     </div>
   );
 };

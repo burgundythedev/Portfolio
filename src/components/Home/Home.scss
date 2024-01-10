@@ -1,0 +1,108 @@
+.home {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+
+    &__top-line {
+        border-radius: 15px;
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 250px;
+        top: 0;
+        left: 0;
+        background-color: rgba(89, 40, 229);
+    }
+
+    &__left-line {
+        border-radius: 15px;
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 250px;
+        top: 0;
+        left: 0;
+        background-color: rgba(89, 40, 229);
+    }
+
+    &__bottom-line {
+        border-radius: 15px;
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 250px;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(89, 40, 229);
+    }
+
+    &__right-line {
+        border-radius: 15px;
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 250px;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(89, 40, 229);
+    }
+    @media screen and (max-width: 1070px) {
+        padding: 40px;
+    }
+ 
+    @media screen and (max-width: 480px) {
+        padding: 20px;
+        &__top-line {
+            border-radius: 0px;
+            content: '';
+            position: absolute;
+            height: 8px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(89, 40, 229);
+        }
+    
+        &__left-line {
+            border-radius: 15px;
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 100px;
+            top: 0;
+            left: 0;
+            background-color: rgba(89, 40, 229);
+        }
+    
+        &__bottom-line {
+            border-radius: 0px;
+            content: '';
+            position: absolute;
+            height: 8px;
+            width: 100%;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(89, 40, 229);
+        }
+    
+        &__right-line {
+            border-radius: 15px;
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 100px;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(89, 40, 229);
+        }
+    
+    
+    }
+}

@@ -1,13 +1,10 @@
 import React from "react";
 import "./App.scss";
-import Header from "./components/Header/Header";
-import Presentation from "./components/Presentation/Presentation";
-import About from "./components/About/About";
-import Project from "./components/Project/Project";
-import Form from "./components/Contact/Form";
+
+// import Project from "./components/Project/Project";
 import WrapperBack from "./UI/WrapperBack";
-import Blog from "./components/Blog/Blog";
 import { Helmet } from "react-helmet";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
@@ -19,14 +16,9 @@ function App() {
         <meta name="description" content="Olivier Bourgogne Portfolio" />
       </Helmet>
       <WrapperBack>
-        <Header />
-        <Presentation />
+        <Home />
       </WrapperBack>
-      <About />
-      <Project />
-      <Blog />
-
-      <Form />
+      {/* <Project /> */}
     </div>
   );
 }
