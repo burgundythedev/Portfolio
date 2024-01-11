@@ -10,10 +10,6 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>O.Bourgogne Web Developer</title>
-        <link
-          rel="canonical"
-          href="https://burgundythedev.github.io/Portfolio/"
-        />
         <meta name="description" content="Olivier Bourgogne Portfolio" />
       </Helmet>
       <WrapperBack>
