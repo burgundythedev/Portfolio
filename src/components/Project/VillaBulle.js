@@ -9,9 +9,15 @@ const VillaBulle = () => {
         data analysis, ensuring a smooth and intuitive user experience.
       </p>
       <p className="villa__text">
-        Villabulle E-Commerce is built on React, incorporating Redux, SASS/BEM,
-        Media Queries, and Firebase. It uses NPM packages and custom hooks, with
-        a focus on security through environment variables.
+        Villabulle E-Commerce is built on{" "}
+        <strong className="villa__strong">React</strong>, incorporating{" "}
+        <strong className="villa__strong">Redux</strong>,{" "}
+        <strong className="villa__strong">SASS/BEM</strong>,{" "}
+        <strong className="villa__strong">Media Queries</strong>, and{" "}
+        <strong className="villa__strong">Firebase</strong>. It uses{" "}
+        <strong className="villa__strong">NPM packages and custom hooks</strong>
+        , with a focus on security through{" "}
+        <strong className="villa__strong">environment variables</strong>.
       </p>
       <a
         href="https://burgundythedev.github.io/evisit-villabulle/"

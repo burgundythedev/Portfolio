@@ -1,14 +1,4 @@
-@font-face {
-  font-family: "Futura";
-  src: local("Futura"),
-    url(../../UI/Fonts/Futura-Bold-font.ttf) format("truetype");
-}
 
-@font-face {
-  font-family: "Orbitron";
-  src: local("Orbitron"),
-    url(../../UI/Fonts/Orbitron-VariableFont_wght.ttf) format("truetype");
-}
 
 @font-face {
   font-family: "Integral";
@@ -21,7 +11,7 @@
   font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: space-between;
-  padding: 75px 20px;
+  padding: 50px 20px;
 
   &__wrapper {
     display: flex;
@@ -114,7 +104,7 @@
       content: '';
       position: absolute;
       width: 2px;
-      height: 150px;
+      height: 200px;
       top: 50%;
       transform: translateY(-50%);
       left: 15px;
@@ -161,7 +151,7 @@
       content: '';
       position: absolute;
       width: 5px;
-      height: 75px;
+      height: 150px;
       top: 0;
       left: 0;
       background-color: rgba(206, 160, 160);
@@ -172,6 +162,7 @@
   &__sidebar-title {
     font-family: "Integral";
     font-size: 30px;
+    color: #d1d1d1;
   }
 
   &__project {
@@ -189,11 +180,11 @@
 
 
   @media screen and (max-width: 1400px) {
-    padding: 55px 20px;
+    padding: 100px 20px;
   }
 
-  @media screen and (max-width: 1070px) {
-    
+  @media screen and (max-width: 1090px) {
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -232,11 +223,15 @@
     &__description {
       line-height: 20px;
       font-size: 13px;
+      padding: 0px 0px;
+      &::after {
+        display: none;
+      }
     }
   }
 
   @media screen and (max-width: 480px) {
-
+    padding: 0px 20px;
 
 
     &__sidebar-list {
@@ -248,9 +243,9 @@
     }
 
     &__box-welcome {
-
+      flex-direction: row-reverse;
       align-items: flex-end;
-      justify-content: space-around;
+      justify-content: space-between;
     }
 
     &__animation {
@@ -275,9 +270,10 @@
 
 
     &__description {
-      line-height: 20px;
+      line-height: 15px;
       padding: 0px 0px;
       text-align: justify;
+      font-size: 12px;
 
       &::after {
         display: none;
@@ -300,10 +296,21 @@
     }
 
     &__sidebar-title {
+      font-size: 20px;
       margin-bottom: 0;
       color: rgba(89, 40, 229)
     }
 
+    &__project {
+      margin-bottom: 0px;
+    }
+
+    &__hover-text{
+      bottom: 150%;
+      left: 40%;
+      font-size: 8px;
+      letter-spacing: 1px;
+    }
   }
 
 

@@ -72,18 +72,15 @@
 
   @media screen and (max-width: 480px) {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 
     &__logo {
       width: 15px;
     }
 
-    &__details {
-      margin-left: 10px;
-    }
 
     &__text {
-      font-size: 7px;
+      font-size: 9px;
     }
 
     &__img {

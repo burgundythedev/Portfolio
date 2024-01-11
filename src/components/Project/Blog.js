@@ -4,18 +4,28 @@ const Blog = () => {
   return (
     <div className="blog">
       <p className="blog__text">
-        In 2024, I'm expanding my skills across diverse JavaScript frameworks
-        like Solid.js and Next.js, creating projects to deepen my knowledge and
-        stay versatile in web development. I'm intensively focusing on
-        TypeScript to enhance code scalability and maintainability, making it a
-        cornerstone of my development strategy for robust and efficient
-        programming.
+        <strong className="blog__strong">In 2024</strong>, I'm expanding my
+        skills across diverse{" "}
+        <strong className="blog__strong">JavaScript frameworks</strong> like{" "}
+        <strong className="blog__strong">Solid.js</strong> and{" "}
+        <strong className="blog__strong">Next.js</strong>, creating projects to
+        deepen my knowledge and stay versatile in web development. I'm
+        intensively focusing on{" "}
+        <strong className="blog__strong">TypeScript</strong> to enhance code
+        scalability and maintainability, making it a cornerstone of my
+        development strategy for robust and efficient programming.
         <br />
         <br />
-        Professionally, I'm open to joining a forward-thinking company, ready to
-        tackle challenging roles that leverage my skills and encourage growth.
-        For me, 2024 is about embracing new technologies, pushing boundaries,
-        and adapting to the dynamic landscape of web development.
+        Professionally, I'm open to joining a{" "}
+        <strong className="blog__strong">forward-thinking company</strong>,
+        ready to tackle{" "}
+        <strong className="blog__strong">challenging roles</strong> that
+        leverage my skills and encourage growth. For me,{" "}
+        <strong className="blog__strong">2024</strong> is about embracing{" "}
+        <strong className="blog__strong">new technologies</strong>, pushing
+        boundaries, and adapting to the{" "}
+        <strong className="blog__strong">dynamic landscape</strong> of web
+        development.
       </p>
     </div>
   );

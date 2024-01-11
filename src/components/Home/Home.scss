@@ -1,5 +1,6 @@
 .home {
-    padding: 50px;
+
+    padding: 50px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,12 +54,21 @@
         right: 0;
         background-color: rgba(89, 40, 229);
     }
+    @media screen and (max-width: 1400px) {
+        justify-content: space-around;
+            padding: 40px;
+            height: 100vh;
+
+    }
     @media screen and (max-width: 1070px) {
+        justify-content: space-around;
         padding: 40px;
+        height: 100vh;
     }
  
     @media screen and (max-width: 480px) {
-        padding: 20px;
+       justify-content: space-around;
+        padding: 10px 0px;
         &__top-line {
             border-radius: 0px;
             content: '';

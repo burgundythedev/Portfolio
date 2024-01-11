@@ -4,7 +4,8 @@
     padding: 35px 0 0px;
     font-size: 14px;
     color: #d1d1d1;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Integral";
+    letter-spacing: 1px;
 
     @media screen and (max-width: 1070px) {
         font-size: 11px;
@@ -16,7 +17,7 @@
     }
 
     @media screen and (max-width: 480px) {
-        text-align: center;
+        font-size: 9px;
     }
 
 }

@@ -20,8 +20,13 @@
         &:focus {
             color: rgba(206, 160, 160);
         }
+
+
     }
 
+        &__strong {
+            color: rgba(206, 160, 160);
+        }
     @media screen and (max-width: 480px) {
 
         &__link-text {
