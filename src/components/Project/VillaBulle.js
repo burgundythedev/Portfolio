@@ -1,5 +1,6 @@
 import React from "react";
 import "./VillaBulle.scss";
+import villabulle from "../../UI/Image/villabulle.png";
 const VillaBulle = () => {
   return (
     <div className="villa">
@@ -25,7 +26,10 @@ const VillaBulle = () => {
         rel="noreferrer"
         className="villa__link"
       >
-        <p className="villa__link-text">View Site</p>
+        <div className="villa__screen-container">
+          <img className="villa__screen" src={villabulle} alt="screenshot" />
+          <p className="villa__link-text">View Site</p>
+        </div>
       </a>
     </div>
   );
