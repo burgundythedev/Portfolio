@@ -12,7 +12,7 @@ function App() {
         <title>O.Bourgogne Web Developer</title>
         <link
           rel="canonical"
-          href="https://burgundythedev.github.io/Portfolio/"
+          href="https://burgundythedev.github.io/portfolio/"
         />
         <meta name="description" content="Olivier Bourgogne Portfolio" />
       </Helmet>
