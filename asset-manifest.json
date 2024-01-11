@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio-2023/static/css/main.44153839.css",
-    "main.js": "/Portfolio-2023/static/js/main.09fa061c.js",
-    "static/media/picID.png": "/Portfolio-2023/static/media/picID.9070af0fe624a6f18f2e.png",
-    "static/media/mclovin.jpg": "/Portfolio-2023/static/media/mclovin.ef1f624c3bfd86b04041.jpg",
-    "static/media/Futura-Bold-font.ttf": "/Portfolio-2023/static/media/Futura-Bold-font.7bfa561462fd51bcc460.ttf",
-    "static/media/Orbitron-VariableFont_wght.ttf": "/Portfolio-2023/static/media/Orbitron-VariableFont_wght.453377cb91a4554c36ce.ttf",
-    "static/media/OB-logo.png": "/Portfolio-2023/static/media/OB-logo.6e4786febaca604941e1.png",
-    "static/media/IntegralCF-Bold.woff": "/Portfolio-2023/static/media/IntegralCF-Bold.1513f4b0beed59bea2c7.woff",
-    "index.html": "/Portfolio-2023/index.html",
-    "main.44153839.css.map": "/Portfolio-2023/static/css/main.44153839.css.map",
-    "main.09fa061c.js.map": "/Portfolio-2023/static/js/main.09fa061c.js.map"
+    "main.css": "/Portfolio/static/css/main.7f1e57d7.css",
+    "main.js": "/Portfolio/static/js/main.4a59c328.js",
+    "static/media/picID.png": "/Portfolio/static/media/picID.9070af0fe624a6f18f2e.png",
+    "static/media/mclovin.jpg": "/Portfolio/static/media/mclovin.ef1f624c3bfd86b04041.jpg",
+    "static/media/OB-logo.png": "/Portfolio/static/media/OB-logo.6e4786febaca604941e1.png",
+    "static/media/IntegralCF-Bold.woff": "/Portfolio/static/media/IntegralCF-Bold.1513f4b0beed59bea2c7.woff",
+    "index.html": "/Portfolio/index.html",
+    "main.7f1e57d7.css.map": "/Portfolio/static/css/main.7f1e57d7.css.map",
+    "main.4a59c328.js.map": "/Portfolio/static/js/main.4a59c328.js.map"
   },
   "entrypoints": [
-    "static/css/main.44153839.css",
-    "static/js/main.09fa061c.js"
+    "static/css/main.7f1e57d7.css",
+    "static/js/main.4a59c328.js"
   ]
 }
