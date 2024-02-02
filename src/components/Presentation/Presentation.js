@@ -10,10 +10,12 @@ import Stack from "../Project/Stack";
 import Blog from "../Project/Blog";
 import picID from "../../UI/Image/picID.png";
 import mclovin from "../../UI/Image/mclovin.jpg";
+import Choese from "../Project/Choese";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const projectDescriptions = {
   Welcome: <Welcome />,
+  Choese: <Choese />,
   EyeforaScreen: <EyeForAScreen />,
   VillaBulle: <VillaBulle />,
   TechStack: <Stack />,

@@ -29,7 +29,7 @@ const Stacks = () => {
         <br />
         These skills form the foundation of my front-end development
         proficiency, allowing me to create responsive and efficient web
-        applications while staying up-to-date with industry best practices.
+        applications.
       </p>
     </div>
   );

@@ -20,12 +20,7 @@ const Blog = () => {
         <strong className="blog__strong">forward-thinking company</strong>,
         ready to tackle{" "}
         <strong className="blog__strong">challenging roles</strong> that
-        leverage my skills and encourage growth. For me,{" "}
-        <strong className="blog__strong">2024</strong> is about embracing{" "}
-        <strong className="blog__strong">new technologies</strong>, pushing
-        boundaries, and adapting to the{" "}
-        <strong className="blog__strong">dynamic landscape</strong> of web
-        development.
+        leverage my skills and encourage growth.
       </p>
     </div>
   );
