@@ -10,7 +10,6 @@ const Welcome = () => {
         <strong>passion, commitment</strong>, and the efforts I have made to
         make my mark in this field.
         <br />
-        <br />
         An expert in <strong>React, TypeScript, and more</strong>, I am
         passionate about creating{" "}
         <strong>dynamic and high-performance web experiences</strong>.

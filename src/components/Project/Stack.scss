@@ -14,13 +14,12 @@
         font-size: 25px;
         font-weight: bold;
         color: rgba(89, 40, 229);
-        padding: 5px;
+  
     }
 
     @media screen and (max-width: 480px) {
 
         &__strong {
-
             padding: 0px;
         }
 

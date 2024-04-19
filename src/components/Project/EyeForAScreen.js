@@ -10,7 +10,6 @@ const EyeForAScreen = () => {
         offers an effortless movie browsing experience, complete with a
         convenient watchlist functionality.
         <br />
-        <br />
         EyeForAScreen, integrates{" "}
         <strong className="eye__strong">Redux Toolkit</strong> for efficient
         state management, the{" "}

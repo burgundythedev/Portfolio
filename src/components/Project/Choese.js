@@ -12,7 +12,6 @@ const Choese = () => {
         <strong className="choese__strong">Tailwind CSS</strong>. This project
         highlights advanced Tailwind utilities for responsive, eye-catching UIs.
         <br />
-        <br />
         It features a curated sneaker collection, emphasizing design versatility
         and rapid development. <strong className="choese__strong">
           Vite
