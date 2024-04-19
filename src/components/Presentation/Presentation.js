@@ -5,7 +5,7 @@ import "./Presentation.scss";
 import ReactDOM from "react-dom";
 import Welcome from "../Project/Welcome";
 import EyeForAScreen from "../Project/EyeForAScreen";
-import VillaBulle from "../Project/VillaBulle";
+
 import Stack from "../Project/Stack";
 import Blog from "../Project/Blog";
 import picID from "../../UI/Image/picID.png";
@@ -19,7 +19,6 @@ const projectDescriptions = {
   Broski: <Broski />,
   Choese: <Choese />,
   EyeforaScreen: <EyeForAScreen />,
-  VillaBulle: <VillaBulle />,
   TechStack: <Stack />,
   Blog: <Blog />,
 };
