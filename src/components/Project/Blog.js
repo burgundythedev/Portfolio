@@ -6,9 +6,9 @@ const Blog = () => {
       <p className="blog__text">
         <strong className="blog__strong">In 2024</strong>, I'm expanding my
         skills across diverse{" "}
-        <strong className="blog__strong">JavaScript frameworks</strong> like{" "}
+        <strong className="blog__strong">JavaScript projects</strong> like{" "}
         <strong className="blog__strong">Solid.js</strong> and{" "}
-        <strong className="blog__strong">Next.js</strong>, creating projects to
+        <strong className="blog__strong">Node.js</strong>, creating projects to
         deepen my knowledge and stay versatile in web development. I'm
         intensively focusing on{" "}
         <strong className="blog__strong">TypeScript</strong> to enhance code

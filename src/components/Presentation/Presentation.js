@@ -11,10 +11,12 @@ import Blog from "../Project/Blog";
 import picID from "../../UI/Image/picID.png";
 import mclovin from "../../UI/Image/mclovin.jpg";
 import Choese from "../Project/Choese";
+import Broski from "../Project/Broski";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const projectDescriptions = {
   Welcome: <Welcome />,
+  Broski: <Broski />,
   Choese: <Choese />,
   EyeforaScreen: <EyeForAScreen />,
   VillaBulle: <VillaBulle />,

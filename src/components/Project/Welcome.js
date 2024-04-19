@@ -1,25 +1,29 @@
 import React from "react";
 import "./Welcome.scss";
+
 const Welcome = () => {
   return (
     <div className="welcome">
       <p className="welcome__text">
-        I'm <strong>Olivier Bourgogne</strong>, a{" "}
-        <strong>front-end developer</strong> located in France. I am
-        enthusiastic about leveraging my{" "}
-        <strong>web development expertise</strong> in the business realm to
-        craft <strong>visually stunning UI experiences</strong> that prioritize
-        meticulous attention to detail and <strong>optimal performance</strong>.
+        Having transitioned into web development, my portfolio not only embodies
+        my <strong>technical skills</strong> but also my{" "}
+        <strong>passion, commitment</strong>, and the efforts I have made to
+        make my mark in this field.
         <br />
         <br />
-        Explore my portfolio to see some of my <strong>notable projects</strong>
-        .{" "}
+        An expert in <strong>React, TypeScript, and more</strong>, I am
+        passionate about creating{" "}
+        <strong>dynamic and high-performance web experiences</strong>.
+        <br />
+        <br />
+        Together, let's bring your <strong>digital visions to life</strong>.
         <a
           href="https://www.linkedin.com/in/olivier-bourgogne/"
           className="welcome__link"
           target="_blank"
           rel="noreferrer"
         >
+          {" "}
           <strong>Let's connect</strong>
         </a>{" "}
         for a discussion about how we can collaborate and enhance your business
