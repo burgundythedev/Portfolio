@@ -232,14 +232,16 @@
   }
 
   @media screen and (max-width: 480px) {
-    padding: 0px 20px;
+    padding: 0px 50px;
     &__description-wrapper {
      
       height: 240px;
  
 
     }
-
+&__img{
+  display:none
+}
     &__sidebar-list {
       display: flex;
       flex-direction: column;

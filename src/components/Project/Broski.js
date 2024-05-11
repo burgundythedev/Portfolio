@@ -6,18 +6,17 @@ const Broski = () => {
     <div className="broski">
       <p className="broski__text">
         <strong className="broski__strong">Broski Social Chat</strong> is a
-        sleek,{" "}
-        <strong className="broski__strong">real-time chat application</strong>{" "}
-        built with <strong className="broski__strong">Vite</strong>,{" "}
-        <strong className="broski__strong">React TypeScript</strong>, and{" "}
-        <strong className="broski__strong">Tailwind CSS</strong>. This
-        full-stack Node app uses{" "}
+        sleek, real-time chat application built with{" "}
+        <strong className="broski__strong">Vite</strong>,{" "}
+        <strong className="broski__strong">React, TypeScript</strong>, and{" "}
+        <strong className="broski__strong">Tailwind CSS</strong>. This{" "}
+        <strong className="broski__strong">full-stack Node</strong> app uses{" "}
         <strong className="broski__strong">Redux Toolkit</strong> and{" "}
         <strong className="broski__strong">RTK Query</strong> for state
         management, while <strong className="broski__strong">Express</strong>{" "}
         and
-        <strong className="broski__strong">Socket.io</strong> power its backend,
-        ensuring fast and reliable communication. Data is managed with{" "}
+        <strong className="broski__strong"> Socket.io</strong> power its
+        backend, ensuring fast and reliable communication. Data is managed with{" "}
         <strong className="broski__strong">MongoDB</strong>.
       </p>
       <a
